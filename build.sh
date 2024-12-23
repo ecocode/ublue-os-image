@@ -35,10 +35,11 @@ rpm-ostree install atool akregator alot aerc
       # - appimagelauncher
 rpm-ostree install bat bemenu
       # - bettercap
-rpm-ostree install blueman cargo cryfs cosmic-desktop digikam distrobox dconf-editor dolphin egl-wayland entr
+rpm-ostree install blueman cargo cryfs digikam distrobox dconf-editor dolphin egl-wayland entr
       # epiphany is the package name of gnome web
       # - epiphany
-rpm-ostree install eww eza fastfetch fbreader fd-find firewall-config fish foot foot-terminfo fzf gh glances glibc-locale-source gnome-tweaks gocryptfs grim gparted gtk3 gvfs-gphoto2 gvfs-afc hotspot imv
+rpm-ostree install eww eza fastfetch fbreader fd-find firewall-config fish foot foot-terminfo fzf gh glances glibc-locale-source gocryptfs grim gparted gvfs-gphoto2 gvfs-afc hotspot imv
+      # - gtk3 gnome-tweaks cosmic-desktop # removed to test if this removes the gtk portal
       # - insync
       # - intel-media-driver
 rpm-ostree install inxi j4-dmenu-desktop jrnl kalendar kamera kf5-solid kf6-solid kio-gdrive kio-extras-kf5 kio-fuse kio-ftps kjournald kontact ksystemlog kwallet-pam kanshi kitty kitty-terminfo libimobiledevice libimobiledevice-utils libusb light lm_sensors lshw luarocks lynx macchanger mako mediainfo miracle-wm mpv neochat neovim network-manager-applet NetworkManager-tui
