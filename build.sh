@@ -27,7 +27,10 @@ dnf5 -y copr enable yalter/niri
 # dnf5 -y copr enable https://gist.github.com/ecocode/21beb822a05373ac063cb3bf1a550d6c/raw/a7ed5b79ef8d675bdd7e7866cf64fdfb67e27d74/terra.repo
 dnf5 -y copr enable ryanabx/cosmic-epoch
 
-dnf install -- --repofrompath "terra,https://repos.fyralabs.com/terra$(rpm -E %fedora)" --setopt="terra.gpgkey=https://repos.fyralabs.com/terra$(rpm -E %fedora)/key.asc" terra-release
+curl -fsSL https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo | pkexec tee /etc/yum.repos.d/terra.repo
+rpm-ostree install terra-release
+
+# dnf install -- --repofrompath "terra,https://repos.fyralabs.com/terra$(rpm -E %fedora)" --setopt="terra.gpgkey=https://repos.fyralabs.com/terra$(rpm -E %fedora)/key.asc" terra-release
 
 
 # this installs a package from fedora repos
