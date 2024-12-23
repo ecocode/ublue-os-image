@@ -67,7 +67,7 @@ rpm-ostree install zellij zoxide
 
 rpm-ostree uninstall firefox firefox-langpacks
 
-flatpak --installation=default install com.brave.Browser
+flatpak install flathub com.brave.Browser
 flatpak uninstall org.gnome.eog
 
 # this would install a package from rpmfusion
