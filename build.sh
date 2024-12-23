@@ -24,14 +24,11 @@ dnf5 -y copr enable varlad/zellij
 dnf5 -y copr enable wezfurlong/wezterm-nightly
 dnf5 -y copr enable alebastr/swayr
 dnf5 -y copr enable yalter/niri
-# dnf5 -y copr enable https://gist.github.com/ecocode/21beb822a05373ac063cb3bf1a550d6c/raw/a7ed5b79ef8d675bdd7e7866cf64fdfb67e27d74/terra.repo
 dnf5 -y copr enable ryanabx/cosmic-epoch
 
 curl -fsSL https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo | tee /etc/yum.repos.d/terra.repo
+# dnf config-manager --add-repo https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
 rpm-ostree install terra-release
-
-# dnf install -- --repofrompath "terra,https://repos.fyralabs.com/terra$(rpm -E %fedora)" --setopt="terra.gpgkey=https://repos.fyralabs.com/terra$(rpm -E %fedora)/key.asc" terra-release
-
 
 # this installs a package from fedora repos
 rpm-ostree install atool akregator alot
@@ -70,7 +67,7 @@ rpm-ostree install zellij zoxide
 
 rpm-ostree uninstall firefox firefox-langpacks
 
-flatpak --installation=default install flathub com.brave.Browser
+flatpak --installation=default install com.brave.Browser
 flatpak uninstall org.gnome.eog
 
 # this would install a package from rpmfusion
