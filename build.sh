@@ -60,7 +60,7 @@ rpm-ostree install ripgrep river rofi-wayland samba
       # - sddm-wayland-generic
 rpm-ostree install  slurp sshfs starship strace
       # - sway
-rpm-ostree install swaybg swayr swayidle swaylock sway-systemd systemd taskopen tilix tlp tmux trash-cli usbip udiskie variety virt-install virt-manager virt-top virt-viewer w3m waybar
+rpm-ostree install swaybg swayr swayidle swaylock sway-systemd systemd taskopen tilix tlp tmux trash-cli usbip udisks2 udiskie variety virt-install virt-manager virt-top virt-viewer w3m waybar
       # - wayfire
 rpm-ostree install webkit2gtk3 webkit2gtk4.0 wdisplays wezterm wl-clipboard wofi xdg-desktop-portal-wlr power-profiles-daemon
       # - xorg-x11-drv-nvidia-cuda
