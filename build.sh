@@ -74,6 +74,11 @@ rpm-ostree uninstall firefox firefox-langpacks
 # this would install a package from rpmfusion
 # rpm-ostree install vlc
 
+# download and install 1password
+curl -O https://downloads.1password.com/linux/rpm/stable/x86_64/1password-latest.rpm
+rpm-ostree install 1password-latest.rpm
+rm 1password.com
+
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
