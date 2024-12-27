@@ -76,9 +76,9 @@ rpm-ostree uninstall firefox firefox-langpacks
 
 # download and install 1password
 curl https://downloads.1password.com/linux/keys/1password.asc | tee /etc/pki/rpm-gpg/RPM-GPG-KEY-1password
-sh -c 'echo -e "[1password]\nname=1Password Stable Channel\nbaseurl=https://downloads.1password.com/linux/rpm/stable/\$basearch\nenabled=1\ngpgcheck=0\nrepo_gpgcheck=0\ngpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-1password" > /etc/yum.repos.d/1password.repo'
+sh -c 'echo -e "[1password]\nname=1Password Stable Channel\nbaseurl=https://downloads.1password.com/linux/rpm/stable/\$basearch\nenabled=1\ngpgcheck=1\nrepo_gpgcheck=0\ngpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-1password" > /etc/yum.repos.d/1password.repo'
 # curl -O https://downloads.1password.com/linux/rpm/stable/x86_64/1password-latest.rpm
-rpm-ostree install 1password 1password-cli
+# rpm-ostree install 1password 1password-cli
 
 #### Example for enabling a System Unit File
 
