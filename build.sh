@@ -45,7 +45,6 @@ rpm-ostree install eww eza fastfetch fbreader fd-find firewall-config fish foot 
 rpm-ostree install inxi j4-dmenu-desktop jrnl kalendar kamera kf5-solid kf6-solid kio-gdrive kio-extras-kf5 kio-fuse kio-ftps kjournald kontact ksystemlog kwallet-pam kanshi kitty kitty-terminfo libimobiledevice libimobiledevice-utils libusb light lm_sensors lshw luarocks lynx macchanger mako mediainfo miracle-wm mpv youtube-dl neochat neovim network-manager-applet NetworkManager-tui
       # - niri
       # - nnn
-rpm-ostree install nushell
       # - nvidia-vaapi-driver
 rpm-ostree install nvtop odt2txt pandoc
       # - openh264
@@ -54,17 +53,38 @@ rpm-ostree install openssl-devel pasystray perf perl-File-MimeInfo plasma-waylan
       # - qt5-qtwebengine-freeworld
 rpm-ostree install qt6-qtwayland
       # - qtile
-rpm-ostree install ripgrep river rofi-wayland samba
+rpm-ostree install ripgrep samba
       # - sddm
       # - sddm-wayland-sway
       # - sddm-wayland-generic
-rpm-ostree install  slurp sshfs starship strace
+rpm-ostree install strace
       # - sway
-rpm-ostree install swaybg swayr swayidle swaylock sway-systemd systemd taskopen tilix tlp tmux trash-cli usbip udisks2 udiskie variety virt-install virt-manager virt-top virt-viewer w3m waybar
+rpm-ostree install systemd tlp trash-cli usbip udisks2 udiskie variety virt-install virt-manager virt-top virt-viewer w3m 
       # - wayfire
-rpm-ostree install webkit2gtk3 webkit2gtk4.0 gtk4-devel libadwaita-devel libadwaita wdisplays wezterm wl-clipboard wofi xdg-desktop-portal-wlr power-profiles-daemon
+rpm-ostree install power-profiles-daemon
       # - xorg-x11-drv-nvidia-cuda
-rpm-ostree install zellij lazygit git zoxide
+
+########################################################################################################
+# NEW SORT BY PURPOSE
+########################################################################################################
+
+# sway and wayland
+rpm-ostree install slurp wdisplays wl-clipboard wofi xdg-desktop-portal-wlr swaybg swayr swayidle swaylock sway-systemd waybar
+rpm-ostree install river rofi-wayland 
+
+# gtk libs
+rpm-ostree install webkit2gtk3 webkit2gtk4.0 gtk4-devel libadwaita-devel libadwaita 
+
+# taskwarrior
+rpm-ostree install taskopen 
+
+# development tools
+rpm-ostree install tmux zellij lazygit git zoxide
+rpm-ostree install tilix wezterm starship 
+rpm-ostree install nushell
+
+# network tools
+rpm-ostree install netscanner nmap sshfs 
 
 rpm-ostree uninstall firefox firefox-langpacks
 
