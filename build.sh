@@ -62,7 +62,7 @@ rpm-ostree install  slurp sshfs starship strace
       # - sway
 rpm-ostree install swaybg swayr swayidle swaylock sway-systemd systemd taskopen tilix tlp tmux trash-cli usbip udisks2 udiskie variety virt-install virt-manager virt-top virt-viewer w3m waybar
       # - wayfire
-rpm-ostree install webkit2gtk3 webkit2gtk4.0 gtk4-devel wdisplays wezterm wl-clipboard wofi xdg-desktop-portal-wlr power-profiles-daemon
+rpm-ostree install webkit2gtk3 webkit2gtk4.0 gtk4-devel libadwaita-devel wdisplays wezterm wl-clipboard wofi xdg-desktop-portal-wlr power-profiles-daemon
       # - xorg-x11-drv-nvidia-cuda
 rpm-ostree install zellij lazygit git zoxide
 
