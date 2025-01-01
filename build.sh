@@ -32,7 +32,7 @@ curl -fsSL https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo | tee
 rpm-ostree install terra-release
 
 # this installs a package from fedora repos
-rpm-ostree install atool akregator alot mailcap aerc
+rpm-ostree install atool akregator alot mailcap aerc msmtp
       # - appimagelauncher
 rpm-ostree install bat bemenu
       # - bettercap
