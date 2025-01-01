@@ -25,6 +25,7 @@ dnf5 -y copr enable wezfurlong/wezterm-nightly
 dnf5 -y copr enable alebastr/swayr
 dnf5 -y copr enable yalter/niri
 dnf5 -y copr enable ryanabx/cosmic-epoch
+dnf5 -y copr enable meeuw/alot
 
 curl -fsSL https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo | tee /etc/yum.repos.d/terra.repo
 # dnf config-manager --add-repo https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
