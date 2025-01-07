@@ -43,7 +43,7 @@ rpm-ostree install eww eza fastfetch fbreader fd-find firewall-config fish foot 
       # - gtk3 gnome-tweaks cosmic-desktop # removed to test if this removes the gtk portal
       # - insync
       # - intel-media-driver
-rpm-ostree install inxi j4-dmenu-desktop jrnl kalendar kamera kf5-solid kf6-solid kio-gdrive kio-extras-kf5 kio-fuse kio-ftps kjournald kontact ksystemlog kwallet-pam kanshi kitty kitty-terminfo libimobiledevice libimobiledevice-utils libusb light lm_sensors lshw luarocks lynx macchanger mako mediainfo miracle-wm mpv youtube-dl neochat neovim network-manager-applet NetworkManager-tui catimg
+rpm-ostree install inxi j4-dmenu-desktop jrnl kalendar kamera kf5-solid kf6-solid kio-gdrive kio-extras-kf5 kio-fuse kio-ftps kjournald kontact ksystemlog kwallet-pam kanshi kitty kitty-terminfo libimobiledevice libimobiledevice-utils libusb light lm_sensors lshw luarocks lynx macchanger mako mediainfo miracle-wm mpv youtube-dl neochat neovim network-manager-applet NetworkManager-tui catimg escript
       # - niri
       # - nnn
       # - nvidia-vaapi-driver
