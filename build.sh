@@ -47,7 +47,7 @@ rpm-ostree install inxi j4-dmenu-desktop jrnl kalendar kamera kf5-solid kf6-soli
       # - niri
       # - nnn
       # - nvidia-vaapi-driver
-rpm-ostree install nvtop odt2txt pandoc
+rpm-ostree install nvtop odt2txt pandoc zathura
       # - openh264
 rpm-ostree install openssl-devel pasystray perf perl-File-MimeInfo plasma-wayland-protocols pulseaudio-utils
       # - qutebrowser
