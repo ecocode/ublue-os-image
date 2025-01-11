@@ -59,12 +59,13 @@ rpm-ostree install ripgrep samba
       # - sddm
       # - sddm-wayland-sway
       # - sddm-wayland-generic
-rpm-ostree install cosmic-desktop hyprland miracle-wm
+rpm-ostree install cosmic-desktop miracle-wm
+rpm-ostree install hyprland cmake meson cpio
 rpm-ostree install strace
       # - sway
 rpm-ostree install systemd tlp trash-cli usbip udisks2 udiskie variety virt-install virt-manager virt-top virt-viewer w3m 
       # - wayfire
-# 20250111 - check if needed : rpm-ostree install power-profiles-daemon
+rpm-ostree install power-profiles-daemon
       # - xorg-x11-drv-nvidia-cuda
 
 ########################################################################################################
