@@ -40,16 +40,17 @@ rpm-ostree install blueman cargo cryfs digikam distrobox dconf-editor dolphin eg
       # epiphany is the package name of gnome web
       # - epiphany
 rpm-ostree install eww eza fastfetch fbreader fd-find firewall-config fish foot foot-terminfo fzf gh glances bpytop glibc-locale-source gocryptfs grim gparted gvfs-gphoto2 gvfs-afc hotspot imv
-      # - gtk3 gnome-tweaks cosmic-desktop # removed to test if this removes the gtk portal
+      # - gtk3 gnome-tweaks # removed to test if this removes the gtk portal
       # - insync
       # - intel-media-driver
-rpm-ostree install inxi j4-dmenu-desktop jrnl kalendar kamera kf5-solid kf6-solid kio-gdrive kio-extras-kf5 kio-fuse kio-ftps kjournald kontact ksystemlog kwallet-pam kanshi kitty kitty-terminfo libimobiledevice libimobiledevice-utils libusb light lm_sensors lshw luarocks lynx macchanger mako mediainfo miracle-wm mpv youtube-dl neochat neovim network-manager-applet NetworkManager-tui catimg
+rpm-ostree install inxi j4-dmenu-desktop jrnl kalendar kamera kf5-solid kf6-solid kio-gdrive kio-extras-kf5 kio-fuse kio-ftps kjournald kontact ksystemlog kwallet-pam kanshi kitty kitty-terminfo libimobiledevice libimobiledevice-utils libusb light lm_sensors lshw luarocks lynx macchanger mako mediainfo mpv youtube-dl neochat neovim network-manager-applet NetworkManager-tui catimg
       # - niri
       # - nnn
       # - nvidia-vaapi-driver
 rpm-ostree install nvtop odt2txt pandoc zathura
       # - openh264
-rpm-ostree install openssl-devel pasystray perf perl-File-MimeInfo plasma-wayland-protocols pulseaudio-utils
+rpm-ostree install openssl-devel pasystray perf perl-File-MimeInfo plasma-wayland-protocols
+      # removed by EC 2025.01.11 to test on sway auna usb player : pulseaudio-utils
       # - qutebrowser
       # - qt5-qtwebengine-freeworld
 rpm-ostree install qt6-qtwayland
@@ -58,11 +59,12 @@ rpm-ostree install ripgrep samba
       # - sddm
       # - sddm-wayland-sway
       # - sddm-wayland-generic
+rpm-ostree install cosmic-desktop hyprland miracle-wm
 rpm-ostree install strace
       # - sway
 rpm-ostree install systemd tlp trash-cli usbip udisks2 udiskie variety virt-install virt-manager virt-top virt-viewer w3m 
       # - wayfire
-rpm-ostree install power-profiles-daemon
+# 20250111 - check if needed : rpm-ostree install power-profiles-daemon
       # - xorg-x11-drv-nvidia-cuda
 
 ########################################################################################################
