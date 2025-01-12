@@ -60,7 +60,7 @@ rpm-ostree install ripgrep samba
       # - sddm-wayland-sway
       # - sddm-wayland-generic
 rpm-ostree install cosmic-desktop miracle-wm
-rpm-ostree install hyprland hyprland-devel cmake meson cpio
+rpm-ostree install hyprland hyprland-devel xdg-desktop-portal-hyprland hyprland-plugins hyprpaper hypridle hyprlock hyprpolkitagent hyprsysteminfo hyprshot hyprnome hyprdim cmake meson cpio
 rpm-ostree install strace
       # - sway
 rpm-ostree install systemd trash-cli usbip udisks2 udiskie variety virt-install virt-manager virt-top virt-viewer w3m 
