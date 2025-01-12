@@ -63,9 +63,10 @@ rpm-ostree install cosmic-desktop miracle-wm
 rpm-ostree install hyprland cmake meson cpio
 rpm-ostree install strace
       # - sway
-rpm-ostree install systemd tlp trash-cli usbip udisks2 udiskie variety virt-install virt-manager virt-top virt-viewer w3m 
+rpm-ostree install systemd trash-cli usbip udisks2 udiskie variety virt-install virt-manager virt-top virt-viewer w3m 
       # - wayfire
-rpm-ostree install power-profiles-daemon
+rpm-ostree install tlp
+# rpm-ostree install power-profiles-daemon
       # - xorg-x11-drv-nvidia-cuda
 
 ########################################################################################################
