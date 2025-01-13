@@ -114,7 +114,7 @@ sh -c 'echo -e "[1password]\nname=1Password Stable Channel\nbaseurl=https://down
 # dnf5 -y install 1password 1password-cli
 
 # mkdir -p /usr/local/bin /usr/local/lib
-pip install --prefix /usr --upgrade youtube-dl
+# pip install --prefix /usr --upgrade youtube-dl
 
 #### Example for enabling a System Unit File
 
