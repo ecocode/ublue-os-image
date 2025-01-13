@@ -71,6 +71,9 @@ rpm-ostree install tlp
 # rpm-ostree install power-profiles-daemon
       # - xorg-x11-drv-nvidia-cuda
 
+# needed for youtube-dl
+rpm-ostree install python3-pip
+
 ########################################################################################################
 # NEW SORT BY PURPOSE
 ########################################################################################################
