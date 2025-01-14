@@ -92,7 +92,7 @@ rpm-ostree install taskopen
 rpm-ostree install tmux zellij lazygit git zoxide
 rpm-ostree install tilix wezterm kitty kitty-terminfo starship 
 rpm-ostree install fish nushell
-rpm-ostree neovim helix
+rpm-ostree install neovim helix
 
 # network tools
 rpm-ostree install netscanner nmap sshfs 
