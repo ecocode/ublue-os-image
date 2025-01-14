@@ -39,11 +39,11 @@ rpm-ostree install bat bemenu
 rpm-ostree install blueman cargo cryfs digikam distrobox dconf-editor dolphin egl-wayland entr
       # epiphany is the package name of gnome web
       # - epiphany
-rpm-ostree install eww eza fastfetch fbreader fd-find firewall-config fish foot foot-terminfo fzf gh glances bpytop glibc-locale-source gocryptfs grim gparted gvfs-gphoto2 gvfs-afc hotspot imv
+rpm-ostree install eww eza fastfetch fbreader fd-find firewall-config foot foot-terminfo fzf gh glances bpytop glibc-locale-source gocryptfs grim gparted gvfs-gphoto2 gvfs-afc hotspot imv
       # - gtk3 gnome-tweaks # removed to test if this removes the gtk portal
       # - insync
       # - intel-media-driver
-rpm-ostree install inxi j4-dmenu-desktop jrnl kalendar kamera kf5-solid kf6-solid kio-gdrive kio-extras-kf5 kio-fuse kio-ftps kjournald kontact ksystemlog kwallet-pam kanshi kitty kitty-terminfo libimobiledevice libimobiledevice-utils libusb light lm_sensors lshw luarocks lynx macchanger mako mediainfo mpv neochat neovim network-manager-applet NetworkManager-tui catimg
+rpm-ostree install inxi j4-dmenu-desktop jrnl kalendar kamera kf5-solid kf6-solid kio-gdrive kio-extras-kf5 kio-fuse kio-ftps kjournald kontact ksystemlog kwallet-pam kanshi libimobiledevice libimobiledevice-utils libusb light lm_sensors lshw luarocks lynx macchanger mako mediainfo mpv neochat network-manager-applet NetworkManager-tui catimg
       # - youtube-dl
       # - niri
       # - nnn
@@ -90,8 +90,9 @@ rpm-ostree install taskopen
 
 # development tools
 rpm-ostree install tmux zellij lazygit git zoxide
-rpm-ostree install tilix wezterm starship 
-rpm-ostree install nushell
+rpm-ostree install tilix wezterm kitty kitty-terminfo starship 
+rpm-ostree install fish nushell
+rpm-ostree neovim helix
 
 # network tools
 rpm-ostree install netscanner nmap sshfs 
