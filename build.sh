@@ -26,6 +26,7 @@ dnf5 -y copr enable alebastr/swayr
 dnf5 -y copr enable yalter/niri
 dnf5 -y copr enable ryanabx/cosmic-epoch
 dnf5 -y copr enable meeuw/alot
+dnf5 -y copr enable ecomaikgolf/typst
 
 curl -fsSL https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo | tee /etc/yum.repos.d/terra.repo
 # dnf config-manager --add-repo https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
@@ -48,8 +49,8 @@ rpm-ostree install inxi j4-dmenu-desktop jrnl kalendar kamera kf5-solid kf6-soli
       # - niri
       # - nnn
       # - nvidia-vaapi-driver
-rpm-ostree install nvtop odt2txt pandoc zathura
-      # - openh264
+rpm-ostree install nvtop
+# - openh264
 rpm-ostree install openssl-devel pasystray perf perl-File-MimeInfo plasma-wayland-protocols
       # removed by EC 2025.01.11 to test on sway auna usb player : pulseaudio-utils
       # - qutebrowser
@@ -93,6 +94,9 @@ rpm-ostree install tmux zellij lazygit git zoxide
 rpm-ostree install tilix wezterm kitty kitty-terminfo starship 
 rpm-ostree install fish nushell
 rpm-ostree install neovim
+
+# text pdf stuff
+rpm-ostree install odt2txt pandoc zathura typst
 
 # network tools
 rpm-ostree install netscanner nmap sshfs 
