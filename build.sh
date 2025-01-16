@@ -57,7 +57,7 @@ rpm-ostree install openssl-devel pasystray perf perl-File-MimeInfo plasma-waylan
       # - qt5-qtwebengine-freeworld
 rpm-ostree install qt6-qtwayland
       # - qtile
-rpm-ostree install ripgrep samba
+rpm-ostree install samba
       # - sddm
       # - sddm-wayland-sway
       # - sddm-wayland-generic
@@ -94,6 +94,7 @@ rpm-ostree install tmux zellij lazygit git zoxide
 rpm-ostree install tilix wezterm kitty kitty-terminfo starship 
 rpm-ostree install fish nushell
 rpm-ostree install neovim
+rpm-ostree install the_silver_searcher ripgrep 
 
 # text pdf stuff
 rpm-ostree install odt2txt pandoc zathura typst
