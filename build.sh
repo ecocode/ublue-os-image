@@ -66,7 +66,7 @@ rpm-ostree install xdg-desktop-portal-hyprland hyprland-plugins hyprpaper hyprid
       # removed: hyprland hyprland-devel cmake meson cpio
 rpm-ostree install strace
       # - sway
-rpm-ostree install systemd trash-cli gdu usbip udisks2 udiskie variety virt-install virt-manager virt-top virt-viewer w3m 
+rpm-ostree install systemd trash-cli gdu duc usbip udisks2 udiskie variety virt-install virt-manager virt-top virt-viewer w3m 
       # - wayfire
 rpm-ostree install tlp powertop
 # rpm-ostree install power-profiles-daemon
