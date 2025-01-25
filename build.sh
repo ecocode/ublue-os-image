@@ -95,6 +95,7 @@ rpm-ostree install tilix wezterm kitty kitty-terminfo starship
 rpm-ostree install fish nushell
 rpm-ostree install neovim
 rpm-ostree install the_silver_searcher ripgrep 
+rpm-ostree install cuda-toolkit nvidia-gds
 
 # text pdf stuff
 rpm-ostree install odt2txt pandoc zathura typst
