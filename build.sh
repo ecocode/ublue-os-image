@@ -33,7 +33,7 @@ curl -fsSL https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo | tee
 rpm-ostree install terra-release
 
 # dnf config-manager --add-repo https://developer.download.nvidia.com/compute/cuda/repos/fedora41/x86_64/cuda-fedora41.repo
-curl -fsSL https://developer.download.nvidia.com/compute/cuda/repos/fedora41/x86_64/cuda-fedora41.repo | tee /etc/yum.repos.d/cuda.repo
+# curl -fsSL https://developer.download.nvidia.com/compute/cuda/repos/fedora41/x86_64/cuda-fedora41.repo | tee /etc/yum.repos.d/cuda.repo
 
 # this installs a package from fedora repos
 rpm-ostree install atool akregator alot mailcap msmtp
@@ -98,7 +98,7 @@ rpm-ostree install tilix wezterm kitty kitty-terminfo starship
 rpm-ostree install fish nushell
 rpm-ostree install neovim
 rpm-ostree install the_silver_searcher ripgrep 
-rpm-ostree install cuda-toolkit nvidia-gds
+# rpm-ostree install cuda-toolkit nvidia-gds
 
 # text pdf stuff
 rpm-ostree install odt2txt pandoc zathura typst
