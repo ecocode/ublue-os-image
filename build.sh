@@ -94,7 +94,7 @@ rpm-ostree install taskopen
 
 # development tools
 rpm-ostree install tmux zellij lazygit git zoxide
-rpm-ostree install tilix wezterm kitty kitty-terminfo starship 
+rpm-ostree install tilix wezterm kitty kitty-terminfo starship ghostty-terminfo
 rpm-ostree install fish nushell
 rpm-ostree install neovim
 rpm-ostree install the_silver_searcher ripgrep
