@@ -19,7 +19,7 @@ dnf5 -y copr enable atim/nushell
 dnf5 -y copr enable atim/starship
 dnf5 -y copr enable nucleo/gocryptfs
 dnf5 -y copr enable peterwu/iosevka
-dnf5 -y copr enable solopasha/hyprland
+# dnf5 -y copr enable solopasha/hyprland
 dnf5 -y copr enable varlad/zellij
 dnf5 -y copr enable wezfurlong/wezterm-nightly
 dnf5 -y copr enable alebastr/swayr
@@ -64,7 +64,7 @@ rpm-ostree install samba
       # - sddm-wayland-sway
       # - sddm-wayland-generic
 rpm-ostree install cosmic-desktop miracle-wm
-rpm-ostree install xdg-desktop-portal-hyprland hyprland-plugins hyprpaper hypridle hyprlock hyprpolkitagent hyprsysteminfo hyprshot hyprnome hyprdim
+# rpm-ostree install xdg-desktop-portal-hyprland hyprland-plugins hyprpaper hypridle hyprlock hyprpolkitagent hyprsysteminfo hyprshot hyprnome hyprdim
       # removed: hyprland hyprland-devel cmake meson cpio
 rpm-ostree install strace
       # - sway
@@ -84,6 +84,7 @@ rpm-ostree install python3-pip
 # sway and wayland
 rpm-ostree install slurp wdisplays wl-clipboard wofi xdg-desktop-portal-wlr swaybg swayr swayidle swaylock sway-systemd waybar
 rpm-ostree install river rofi-wayland 
+rpm-ostree install ibus
 
 # gtk libs
 rpm-ostree install webkit2gtk3 webkit2gtk4.0 gtk4-devel libadwaita-devel libadwaita 
@@ -96,7 +97,7 @@ rpm-ostree install tmux zellij lazygit git zoxide
 rpm-ostree install tilix wezterm kitty kitty-terminfo starship 
 rpm-ostree install fish nushell
 rpm-ostree install neovim
-rpm-ostree install the_silver_searcher ripgrep 
+rpm-ostree install the_silver_searcher ripgrep
 # rpm-ostree install cuda-toolkit nvidia-gds
 
 # text pdf stuff
