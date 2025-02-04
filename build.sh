@@ -4,7 +4,6 @@ set -ouex pipefail
 
 RELEASE="$(rpm -E %fedora)"
 
-
 ### Install packages
 
 # Packages can be installed from any enabled yum repo on the image.
@@ -37,45 +36,42 @@ rpm-ostree install terra-release
 
 # this installs a package from fedora repos
 rpm-ostree install atool akregator alot mailcap msmtp
-      # - appimagelauncher
+# - appimagelauncher
 rpm-ostree install bat bemenu
-      # - bettercap
+# - bettercap
 rpm-ostree install blueman cargo cryfs digikam distrobox dconf-editor dolphin egl-wayland entr
-      # epiphany is the package name of gnome web
-      # - epiphany
+# epiphany is the package name of gnome web
+# - epiphany
 rpm-ostree install eza fastfetch fbreader fd-find firewall-config foot foot-terminfo fzf gh glances bpytop glibc-locale-source gocryptfs grim gparted gvfs-gphoto2 gvfs-afc hotspot imv
-      # - gtk3 gnome-tweaks # removed to test if this removes the gtk portal
-      # - insync
-      # - intel-media-driver
+# - gtk3 gnome-tweaks # removed to test if this removes the gtk portal
+# - insync
+# - intel-media-driver
 rpm-ostree install j4-dmenu-desktop jrnl kalendar kamera kf5-solid kf6-solid kio-gdrive kio-extras-kf5 kio-fuse kio-ftps kjournald kontact ksystemlog kwallet-pam kanshi libimobiledevice libimobiledevice-utils libusb light lm_sensors lshw luarocks lynx macchanger mako mediainfo mpv neochat network-manager-applet NetworkManager-tui catimg
 rpm-ostree install inxi nvtop
-rpm-ostree install youtube-dl
-      # - niri
-      # - nnn
-      # - nvidia-vaapi-driver
+# rpm-ostree install youtube-dl
+# - niri
+# - nnn
+# - nvidia-vaapi-driver
 rpm-ostree install openssl-devel pasystray perf perl-File-MimeInfo plasma-wayland-protocols
-      # removed by EC 2025.01.11 to test on sway auna usb player : pulseaudio-utils
-      # - qutebrowser
-      # - qt5-qtwebengine-freeworld
+# removed by EC 2025.01.11 to test on sway auna usb player : pulseaudio-utils
+# - qutebrowser
+# - qt5-qtwebengine-freeworld
 rpm-ostree install qt6-qtwayland
-      # - qtile
+# - qtile
 rpm-ostree install samba
-      # - sddm
-      # - sddm-wayland-sway
-      # - sddm-wayland-generic
+# - sddm
+# - sddm-wayland-sway
+# - sddm-wayland-generic
 rpm-ostree install cosmic-desktop miracle-wm
 # rpm-ostree install xdg-desktop-portal-hyprland hyprland-plugins hyprpaper hypridle hyprlock hyprpolkitagent hyprsysteminfo hyprshot hyprnome hyprdim
-      # removed: hyprland hyprland-devel cmake meson cpio
+# removed: hyprland hyprland-devel cmake meson cpio
 rpm-ostree install strace
-      # - sway
-rpm-ostree install systemd trash-cli gdu duc usbip udisks2 udiskie variety virt-install virt-manager virt-top virt-viewer w3m 
-      # - wayfire
+# - sway
+rpm-ostree install systemd trash-cli gdu duc usbip udisks2 udiskie variety virt-install virt-manager virt-top virt-viewer w3m
+# - wayfire
 rpm-ostree install tlp powertop
 # rpm-ostree install power-profiles-daemon
-      # - xorg-x11-drv-nvidia-cuda
-
-# needed for youtube-dl
-rpm-ostree install python3-pip
+# - xorg-x11-drv-nvidia-cuda
 
 ########################################################################################################
 # NEW SORT BY PURPOSE
@@ -83,14 +79,14 @@ rpm-ostree install python3-pip
 
 # sway and wayland
 rpm-ostree install slurp wdisplays wl-clipboard wofi xdg-desktop-portal-wlr swaybg swayr swayidle swaylock sway-systemd waybar
-rpm-ostree install river rofi-wayland 
+rpm-ostree install river rofi-wayland
 rpm-ostree install ibus
 
 # gtk libs
-rpm-ostree install webkit2gtk3 webkit2gtk4.0 gtk4-devel libadwaita-devel libadwaita 
+rpm-ostree install webkit2gtk3 webkit2gtk4.0 gtk4-devel libadwaita-devel libadwaita
 
 # taskwarrior
-rpm-ostree install taskopen 
+rpm-ostree install taskopen
 
 # development tools
 rpm-ostree install tmux zellij lazygit git zoxide
@@ -104,7 +100,7 @@ rpm-ostree install the_silver_searcher ripgrep
 rpm-ostree install odt2txt pandoc zathura typst
 
 # network tools
-rpm-ostree install netscanner nmap sshfs 
+rpm-ostree install netscanner nmap sshfs
 
 rpm-ostree uninstall firefox firefox-langpacks
 
@@ -124,7 +120,6 @@ sh -c 'echo -e "[1password]\nname=1Password Stable Channel\nbaseurl=https://down
 # dnf5 -y install 1password 1password-cli
 
 # mkdir -p /usr/local/bin /usr/local/lib
-# pip install --prefix /usr --upgrade youtube-dl
 
 #### Example for enabling a System Unit File
 
