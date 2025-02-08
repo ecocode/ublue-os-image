@@ -82,6 +82,9 @@ rpm-ostree install slurp wdisplays wl-clipboard wofi xdg-desktop-portal-wlr sway
 rpm-ostree install river rofi-wayland
 rpm-ostree install ibus
 
+# system tools
+rpm-ostree install borgbackup
+
 # gtk libs
 rpm-ostree install webkit2gtk3 webkit2gtk4.0 gtk4-devel libadwaita-devel libadwaita
 
@@ -92,7 +95,7 @@ rpm-ostree install taskopen
 rpm-ostree install tmux zellij lazygit git zoxide
 rpm-ostree install tilix wezterm kitty kitty-terminfo starship ghostty-terminfo
 rpm-ostree install fish nushell
-rpm-ostree install neovim
+rpm-ostree install neovim emacs
 rpm-ostree install the_silver_searcher ripgrep
 # rpm-ostree install cuda-toolkit nvidia-gds
 
