@@ -100,7 +100,7 @@ rpm-ostree install the_silver_searcher ripgrep
 # rpm-ostree install cuda-toolkit nvidia-gds
 
 # text pdf stuff
-rpm-ostree install odt2txt pandoc zathura typst
+rpm-ostree install odt2txt pandoc zathura zathura-pdf-poppler zathura-djvu zathura-ps typst
 
 # network tools
 rpm-ostree install netscanner nmap sshfs
