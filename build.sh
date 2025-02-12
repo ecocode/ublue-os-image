@@ -110,6 +110,8 @@ rpm-ostree uninstall firefox firefox-langpacks
 # flatpak install flathub com.brave.Browser
 # flatpak uninstall org.gnome.eog
 
+flatpak install org.kde.krita
+
 # this would install a package from rpmfusion
 # rpm-ostree install vlc
 
