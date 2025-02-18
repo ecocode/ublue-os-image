@@ -107,7 +107,7 @@ rpm-ostree install netscanner nmap sshfs
 
 rpm-ostree uninstall firefox firefox-langpacks
 
-rpm-ostree install krita
+rpm-ostree install gimp3
 
 # flatpak install flathub com.brave.Browser
 # flatpak uninstall org.gnome.eog
