@@ -72,6 +72,8 @@ rpm-ostree install systemd trash-cli gdu duc usbip udisks2 udiskie variety virt-
 rpm-ostree install tlp powertop
 # rpm-ostree install power-profiles-daemon
 # - xorg-x11-drv-nvidia-cuda
+# These are needed for pdftools inside emacs
+rpm-ostree install autoconf automake gcc libpng-devel make poppler-devel poppler-glib-devel zlib-devel pkgconf
 
 ########################################################################################################
 # NEW SORT BY PURPOSE
