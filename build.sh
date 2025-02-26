@@ -97,7 +97,7 @@ rpm-ostree install taskopen
 rpm-ostree install tmux zellij lazygit git zoxide
 rpm-ostree install tilix wezterm kitty kitty-terminfo starship ghostty-terminfo
 rpm-ostree install fish nushell
-rpm-ostree install neovim emacs tree-sitter-cli
+rpm-ostree install neovim emacs tree-sitter-cli global
 rpm-ostree install the_silver_searcher ripgrep
 # rpm-ostree install cuda-toolkit nvidia-gds
 
