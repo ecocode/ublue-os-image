@@ -26,6 +26,8 @@ dnf5 -y copr enable yalter/niri
 dnf5 -y copr enable ryanabx/cosmic-epoch
 dnf5 -y copr enable meeuw/alot
 dnf5 -y copr enable ecomaikgolf/typst
+dnf5 -y copr enable yalter/niri
+dnf5 -y copr enable ulysg/xwayland-satellite
 
 curl -fsSL https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo | tee /etc/yum.repos.d/terra.repo
 # dnf config-manager --add-repo https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
@@ -62,7 +64,7 @@ rpm-ostree install samba
 # - sddm
 # - sddm-wayland-sway
 # - sddm-wayland-generic
-rpm-ostree install cosmic-desktop miracle-wm
+rpm-ostree install cosmic-desktop miracle-wm niri xwayland-satellite
 # rpm-ostree install xdg-desktop-portal-hyprland hyprland-plugins hyprpaper hypridle hyprlock hyprpolkitagent hyprsysteminfo hyprshot hyprnome hyprdim
 # removed: hyprland hyprland-devel cmake meson cpio
 rpm-ostree install strace
