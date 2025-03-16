@@ -28,6 +28,7 @@ dnf5 -y copr enable meeuw/alot
 dnf5 -y copr enable ecomaikgolf/typst
 dnf5 -y copr enable yalter/niri
 dnf5 -y copr enable ulysg/xwayland-satellite
+dnf5 -y copr enable burhanverse/ghostty
 
 curl -fsSL https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo | tee /etc/yum.repos.d/terra.repo
 # dnf config-manager --add-repo https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
@@ -97,7 +98,7 @@ rpm-ostree install taskopen
 
 # development tools
 rpm-ostree install tmux zellij lazygit git zoxide
-rpm-ostree install tilix wezterm kitty kitty-terminfo starship ghostty-terminfo
+rpm-ostree install tilix wezterm kitty kitty-terminfo starship ghostty ghostty-fish-completion ghostty-terminfo
 rpm-ostree install fish nushell
 rpm-ostree install neovim emacs tree-sitter-cli global
 rpm-ostree install the_silver_searcher ripgrep
