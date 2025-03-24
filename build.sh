@@ -40,7 +40,7 @@ rpm-ostree install terra-release
 # this installs a package from fedora repos
 rpm-ostree install atool akregator alot mailcap msmtp
 # - appimagelauncher
-rpm-ostree install bat bemenu
+rpm-ostree install bat
 # - bettercap
 rpm-ostree install blueman cargo cryfs digikam distrobox dconf-editor dolphin egl-wayland entr
 # epiphany is the package name of gnome web
@@ -61,7 +61,6 @@ rpm-ostree install openssl-devel pasystray perf perl-File-MimeInfo plasma-waylan
 # - qt5-qtwebengine-freeworld
 rpm-ostree install qt6-qtwayland
 # - qtile
-rpm-ostree install samba
 # - sddm
 # - sddm-wayland-sway
 # - sddm-wayland-generic
@@ -70,7 +69,7 @@ rpm-ostree install cosmic-desktop miracle-wm niri xwayland-satellite
 # removed: hyprland hyprland-devel cmake meson cpio
 rpm-ostree install strace
 # - sway
-rpm-ostree install systemd trash-cli gdu duc usbip udisks2 udiskie wpaperd virt-install virt-manager virt-top virt-viewer w3m
+rpm-ostree install systemd trash-cli gdu duc usbip udisks2 udiskie wpaperd virt-install virt-manager virt-top virt-viewer w3m samba
 # - wayfire
 rpm-ostree install tlp powertop
 # rpm-ostree install power-profiles-daemon
@@ -84,11 +83,11 @@ rpm-ostree install autoconf automake gcc libpng-devel make poppler-devel poppler
 
 # sway and wayland
 rpm-ostree install slurp wdisplays wl-clipboard wofi xdg-desktop-portal-wlr swaybg swayr swayidle swaylock sway-systemd waybar
-rpm-ostree install river rofi-wayland
+rpm-ostree install river rofi-wayland bemenu
 rpm-ostree install ibus
 
 # system tools
-rpm-ostree install borgbackup
+rpm-ostree install borgbackup vorta
 
 # gtk libs
 rpm-ostree install webkit2gtk3 webkit2gtk4.0 gtk4-devel libadwaita-devel libadwaita
