@@ -84,7 +84,7 @@ rpm-ostree install autoconf automake gcc libpng-devel make poppler-devel poppler
 # sway and wayland
 rpm-ostree install slurp wdisplays wl-clipboard wofi xdg-desktop-portal-wlr swaybg swayr swayidle swaylock sway-systemd waybar
 rpm-ostree install river rofi-wayland bemenu
-rpm-ostree install ibus
+rpm-ostree install ibus plasma-polkit-agent
 
 # system tools
 rpm-ostree install borgbackup vorta
