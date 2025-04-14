@@ -65,7 +65,7 @@ rpm-ostree install qt6-qtwayland
 # - sddm-wayland-sway
 # - sddm-wayland-generic
 rpm-ostree install cosmic-desktop miracle-wm niri xwayland-satellite
-# rpm-ostree install xdg-desktop-portal-hyprland hyprland-plugins hyprpaper hypridle hyprlock hyprpolkitagent hyprsysteminfo hyprshot hyprnome hyprdim
+# rpm-ostree install xdg-desktop-portal-hyprland hyprland-plugins hyprpaper hypridle hyprlock hyprsysteminfo hyprshot hyprnome hyprdim
 # removed: hyprland hyprland-devel cmake meson cpio
 rpm-ostree install strace
 # - sway
@@ -84,7 +84,7 @@ rpm-ostree install autoconf automake gcc libpng-devel make poppler-devel poppler
 # sway and wayland
 rpm-ostree install slurp wdisplays wl-clipboard wofi xdg-desktop-portal-wlr swaybg swayr swayidle swaylock sway-systemd waybar
 rpm-ostree install river rofi-wayland bemenu
-rpm-ostree install ibus plasma-polkit-agent gnome-keyring
+rpm-ostree install ibus hyprpolkitagent gnome-keyring
 
 # system tools
 rpm-ostree install borgbackup vorta
