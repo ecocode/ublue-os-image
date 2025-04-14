@@ -18,7 +18,7 @@ dnf5 -y copr enable atim/nushell
 dnf5 -y copr enable atim/starship
 dnf5 -y copr enable nucleo/gocryptfs
 dnf5 -y copr enable peterwu/iosevka
-# dnf5 -y copr enable solopasha/hyprland
+dnf5 -y copr enable solopasha/hyprland
 dnf5 -y copr enable varlad/zellij
 dnf5 -y copr enable wezfurlong/wezterm-nightly
 dnf5 -y copr enable alebastr/swayr
