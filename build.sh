@@ -28,7 +28,8 @@ dnf5 -y copr enable meeuw/alot
 dnf5 -y copr enable ecomaikgolf/typst
 dnf5 -y copr enable yalter/niri
 dnf5 -y copr enable ulysg/xwayland-satellite
-dnf5 -y copr enable burhanverse/ghostty
+# only for fedora42
+# dnf5 -y copr enable burhanverse/ghostty
 
 curl -fsSL https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo | tee /etc/yum.repos.d/terra.repo
 # dnf config-manager --add-repo https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
