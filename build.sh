@@ -26,7 +26,6 @@ dnf5 -y copr enable yalter/niri
 dnf5 -y copr enable ryanabx/cosmic-epoch
 dnf5 -y copr enable meeuw/alot
 dnf5 -y copr enable ecomaikgolf/typst
-dnf5 -y copr enable yalter/niri
 dnf5 -y copr enable ulysg/xwayland-satellite
 # only for fedora42
 # dnf5 -y copr enable burhanverse/ghostty
