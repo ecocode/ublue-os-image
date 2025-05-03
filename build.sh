@@ -22,7 +22,8 @@ dnf5 -y copr enable solopasha/hyprland
 dnf5 -y copr enable varlad/zellij
 dnf5 -y copr enable wezfurlong/wezterm-nightly
 dnf5 -y copr enable alebastr/swayr
-dnf5 -y copr enable yalter/niri
+dnf5 -y copr enable yalter/niri-git
+# yalter/niri is stable
 dnf5 -y copr enable ryanabx/cosmic-epoch
 dnf5 -y copr enable meeuw/alot
 dnf5 -y copr enable ecomaikgolf/typst
