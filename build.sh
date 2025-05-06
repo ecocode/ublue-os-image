@@ -2,6 +2,7 @@
 
 set -ouex pipefail
 
+
 RELEASE="$(rpm -E %fedora)"
 
 ### Install packages
