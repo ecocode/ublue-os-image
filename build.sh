@@ -111,7 +111,8 @@ rpm-ostree install odt2txt pandoc zathura zathura-pdf-poppler zathura-djvu zathu
 # network tools
 rpm-ostree install netscanner nmap sshfs
 
-rpm-ostree uninstall firefox firefox-langpacks
+# don't uninstall firefox on aurora because it is not installed and error's out
+# rpm-ostree uninstall firefox firefox-langpacks
 
 rpm-ostree install gimp3
 
