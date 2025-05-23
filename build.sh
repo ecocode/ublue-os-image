@@ -95,7 +95,7 @@ rpm-ostree install borgbackup vorta
 rpm-ostree install webkit2gtk3 webkit2gtk4.0 gtk4-devel libadwaita-devel libadwaita
 
 # taskwarrior
-rpm-ostree install taskopen
+# rpm-ostree install taskopen
 
 # development tools
 rpm-ostree install tmux zellij lazygit git zoxide
