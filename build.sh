@@ -44,7 +44,7 @@ rpm-ostree install atool akregator alot mailcap msmtp
 # - appimagelauncher
 rpm-ostree install bat
 # - bettercap
-rpm-ostree install blueman cargo libsystemd-devel rust-libsystemd-devel libseat libseat-devel cryfs digikam distrobox dconf-editor dolphin egl-wayland entr
+rpm-ostree install blueman cargo rust-libsystemd-devel libseat libseat-devel cryfs digikam distrobox dconf-editor dolphin egl-wayland entr
 # epiphany is the package name of gnome web
 # - epiphany
 rpm-ostree install eza fastfetch fbreader fd-find firewall-config foot foot-terminfo fzf gh glances bpytop glibc-locale-source gocryptfs grim gparted gvfs-gphoto2 gvfs-afc hotspot imv
