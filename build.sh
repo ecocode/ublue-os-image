@@ -27,7 +27,7 @@ dnf5 -y copr enable yalter/niri-git
 # yalter/niri is stable
 dnf5 -y copr enable ryanabx/cosmic-epoch
 dnf5 -y copr enable meeuw/alot
-dnf5 -y copr enable ecomaikgolf/typst
+# dnf5 -y copr enable ecomaikgolf/typst
 dnf5 -y copr enable ulysg/xwayland-satellite
 # only for fedora42
 # dnf5 -y copr enable burhanverse/ghostty
@@ -106,7 +106,7 @@ rpm-ostree install the_silver_searcher ripgrep
 # rpm-ostree install cuda-toolkit nvidia-gds
 
 # text pdf stuff
-rpm-ostree install odt2txt pandoc zathura zathura-pdf-poppler zathura-djvu zathura-ps typst a2ps ghostscript
+rpm-ostree install odt2txt pandoc zathura zathura-pdf-poppler zathura-djvu zathura-ps a2ps ghostscript
 
 # network tools
 rpm-ostree install netscanner nmap sshfs
