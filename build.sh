@@ -32,6 +32,8 @@ dnf5 -y copr enable ulysg/xwayland-satellite
 # only for fedora42
 # dnf5 -y copr enable burhanverse/ghostty
 
+curl -fsSL https://fedorapeople.org/groups/virt/virtio-win/virtio-win.repo | tee /etc/yum.repos.d/virtio-win.repo
+
 curl -fsSL https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo | tee /etc/yum.repos.d/terra.repo
 # dnf config-manager --add-repo https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
 rpm-ostree install terra-release
