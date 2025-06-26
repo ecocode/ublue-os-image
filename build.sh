@@ -116,7 +116,7 @@ rpm-ostree install netscanner nmap sshfs
 # don't uninstall firefox on aurora because it is not installed and error's out
 rpm-ostree uninstall firefox firefox-langpacks
 
-rpm-ostree install gimp3 flameshot
+rpm-ostree install gimp3 dia flameshot
 
 # flatpak install flathub com.brave.Browser
 # flatpak uninstall org.gnome.eog
