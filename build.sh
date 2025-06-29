@@ -19,7 +19,7 @@ dnf5 -y copr enable atim/nushell
 dnf5 -y copr enable atim/starship
 dnf5 -y copr enable nucleo/gocryptfs
 dnf5 -y copr enable peterwu/iosevka
-dnf5 -y copr enable solopasha/hyprland
+# dnf5 -y copr enable solopasha/hyprland
 dnf5 -y copr enable varlad/zellij
 dnf5 -y copr enable wezfurlong/wezterm-nightly
 dnf5 -y copr enable alebastr/swayr
@@ -88,7 +88,7 @@ rpm-ostree install autoconf automake gcc libpng-devel make ninja-build poppler-d
 # sway and wayland
 rpm-ostree install slurp wdisplays wl-clipboard wofi xdg-desktop-portal-wlr swaybg swayr swayidle swaylock sway-systemd waybar
 rpm-ostree install river rofi-wayland bemenu
-rpm-ostree install ibus hyprpolkitagent gnome-keyring
+rpm-ostree install ibus gnome-keyring
 
 # system tools
 rpm-ostree install borgbackup vorta
