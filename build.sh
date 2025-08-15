@@ -68,7 +68,7 @@ rpm-ostree install qt6-qtwayland
 # - sddm
 # - sddm-wayland-sway
 # - sddm-wayland-generic
-rpm-ostree install cosmic-desktop miracle-wm niri xwayland-satellite
+rpm-ostree install cosmic-desktop miracle-wm niri xwayland-satellite kvantum
 # rpm-ostree install xdg-desktop-portal-hyprland hyprland-plugins hyprpaper hypridle hyprlock hyprsysteminfo hyprshot hyprnome hyprdim
 # removed: hyprland hyprland-devel cmake meson cpio
 rpm-ostree install strace
