@@ -104,7 +104,7 @@ rpm-ostree install webkit2gtk3 webkit2gtk4.0 gtk4-devel libadwaita-devel libadwa
 rpm-ostree install tmux zellij lazygit git zoxide
 rpm-ostree install tilix wezterm kitty kitty-terminfo starship ghostty ghostty-fish-completion ghostty-terminfo
 rpm-ostree install fish nushell direnv
-rpm-ostree install neovim emacs kakoune kakoune-lsp tree-sitter-cli global
+rpm-ostree install neovim emacs kakoune kak-lsp tree-sitter-cli global
 rpm-ostree install the_silver_searcher ripgrep
 # rpm-ostree install cuda-toolkit nvidia-gds
 
