@@ -47,7 +47,7 @@ rpm-ostree install atool akregator alot mailcap msmtp
 # - appimagelauncher
 rpm-ostree install bat
 # - bettercap
-rpm-ostree install blueman cryfs digikam distrobox dconf-editor dolphin egl-wayland libglvnd-egl entr
+rpm-ostree install blueman cryfs digikam distrobox dconf-editor dolphin entr
 # epiphany is the package name of gnome web
 # - epiphany
 rpm-ostree install eza fastfetch fbreader fd-find firewall-config foot foot-terminfo fzf gh glances bpytop glibc-locale-source gocryptfs grim gparted gvfs-gphoto2 gvfs-afc hotspot imv
@@ -90,6 +90,8 @@ rpm-ostree install autoconf automake gcc libpng-devel make ninja-build poppler-d
 rpm-ostree install slurp wdisplays wl-clipboard wofi xdg-desktop-portal-wlr swaybg swayr swayidle swaylock sway-systemd waybar
 rpm-ostree install river rofi-wayland bemenu
 rpm-ostree install ibus gnome-keyring
+# for compiling wlroots myself for mangowc
+rpm-ostree install egl-wayland libglvnd-egl libseat wayland-protocols wayland-devel mesa-libEGL-devel mesa-libGLES-devel mesa-dri-drivers xorg-x11-server-Xwayland libdrm-devel libgbm-devel libxkbcommon-devel libudev-devel pixman-devel libinput-devel libevdev-devel systemd-devel cairo-devel libpcap-devel json-c-devel pam-devel pango-devel pcre-devel gdk-pixbuf2-devel hwdata-devel
 
 # system tools
 rpm-ostree install borgbackup vorta
