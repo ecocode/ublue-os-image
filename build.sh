@@ -74,7 +74,7 @@ rpm-ostree install cosmic-desktop miracle-wm niri xwayland-satellite kvantum
 # removed: hyprland hyprland-devel cmake meson cpio
 rpm-ostree install strace
 # - sway
-rpm-ostree install systemd trash-cli gdu duc usbip fwupd udisks2 udiskie wpaperd virt-install virt-manager virt-top virt-viewer virtio-win cockpit cockpit-machines cockpit-ostree cockpit-podman w3m samba
+rpm-ostree install systemd trash-cli gdu duc usbip fwupd udisks2 udiskie wev wpaperd virt-install virt-manager virt-top virt-viewer virtio-win cockpit cockpit-machines cockpit-ostree cockpit-podman w3m samba
 # - wayfire
 rpm-ostree install tlp powertop
 # rpm-ostree install power-profiles-daemon
@@ -92,7 +92,7 @@ rpm-ostree install river rofi-wayland bemenu
 rpm-ostree install ibus gnome-keyring
 # for compiling wlroots myself for mangowc - conflicting
 # rpm-ostree install egl-wayland libglvnd-egl libseat-devel wayland-protocols-devel wayland-devel mesa-libEGL-devel mesa-libGLES-devel mesa-dri-drivers xorg-x11-server-Xwayland libgbm-devel libxkbcommon-devel libudev-devel pixman-devel libinput-devel libevdev-devel systemd-devel cairo-devel libpcap-devel json-c-devel pam-devel pango-devel pcre-devel gdk-pixbuf2-devel hwdata-devel
-rpm-ostree install libdrm libdrm-devel
+# rpm-ostree install libdrm libdrm-devel libdisplay-info
 
 # system tools
 rpm-ostree install borgbackup vorta
