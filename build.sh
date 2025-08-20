@@ -43,7 +43,7 @@ rpm-ostree install terra-release
 # curl -fsSL https://developer.download.nvidia.com/compute/cuda/repos/fedora41/x86_64/cuda-fedora41.repo | tee /etc/yum.repos.d/cuda.repo
 
 # this installs a package from fedora repos
-rpm-ostree install atool akregator alot mailcap msmtp
+rpm-ostree install atool akregator alot mailcap msmtp aerc notmuch
 # - appimagelauncher
 rpm-ostree install bat
 # - bettercap
