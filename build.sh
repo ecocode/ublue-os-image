@@ -75,7 +75,7 @@ rpm-ostree install cosmic-desktop miracle-wm niri xwayland-satellite kvantum
 # removed: hyprland hyprland-devel cmake meson cpio
 rpm-ostree install strace
 # - sway
-rpm-ostree install systemd trash-cli gdu duc usbip fwupd udisks2 udiskie wev wpaperd virt-install virt-manager virt-top virt-viewer virtio-win cockpit cockpit-machines cockpit-ostree cockpit-podman w3m samba
+rpm-ostree install systemd trash-cli gdu duc usbip fwupd udisks2 udiskie wev wpaperd virt-install virt-manager virt-top virt-viewer virtio-win cockpit cockpit-machines cockpit-ostree cockpit-podman w3m samba ddclient
 # - wayfire
 rpm-ostree install tlp powertop
 # rpm-ostree install power-profiles-daemon
