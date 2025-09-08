@@ -88,7 +88,7 @@ rpm-ostree install autoconf automake gcc libpng-devel make ninja-build poppler-d
 ########################################################################################################
 
 # sway and wayland
-rpm-ostree install slurp wdisplays wl-clipboard wofi xdg-desktop-portal-wlr swaybg swayr swayidle swaylock sway-systemd waybar
+rpm-ostree install slurp wdisplays wl-clipboard wofi xdg-desktop-portal-wlr swaybg swayr swayidle swaylock sway-systemd waybar wf-recorder
 rpm-ostree install river rofi-wayland bemenu
 rpm-ostree install ibus gnome-keyring
 # for compiling wlroots myself for mangowc - conflicting
