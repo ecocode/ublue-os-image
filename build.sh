@@ -57,7 +57,7 @@ rpm-ostree install eza fastfetch fbreader fd-find firewall-config foot foot-term
 # - intel-media-driver
 rpm-ostree install j4-dmenu-desktop jrnl kalendar kamera kf5-solid kf6-solid kio-gdrive kio-extras-kf5 kio-fuse kio-ftps kjournald kontact ksystemlog kwallet-pam kanshi libimobiledevice libimobiledevice-utils libusb light lm_sensors lshw luarocks lynx macchanger mako mediainfo mpv neochat fractal network-manager-applet NetworkManager-tui catimg
 # stuff for wallpapers
-rpm-ostree install kf6-kwidgetaddons-devel kde-wallpapers plasma-workspace-wallpapers arc-kde-wallpapers materia-kde-wallpapers plasma-wallpapers-dynamic variety constantine-backgrounds-kde
+rpm-ostree install kde-wallpapers plasma-workspace-wallpapers arc-kde-wallpapers materia-kde-wallpapers plasma-wallpapers-dynamic variety constantine-backgrounds-kde
 rpm-ostree install inxi nvtop drm_info
 # rpm-ostree install youtube-dl
 # - niri
