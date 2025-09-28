@@ -56,8 +56,6 @@ rpm-ostree install eza fastfetch fbreader fd-find firewall-config foot foot-term
 # - insync
 # - intel-media-driver
 rpm-ostree install j4-dmenu-desktop jrnl kalendar kamera kf5-solid kf6-solid kio-gdrive kio-extras-kf5 kio-fuse kio-ftps kjournald kontact ksystemlog kwallet-pam kanshi libimobiledevice libimobiledevice-utils libusb light lm_sensors lshw luarocks lynx macchanger mako mediainfo mpv neochat fractal network-manager-applet NetworkManager-tui catimg
-# stuff for wallpapers
-rpm-ostree install kde-wallpapers plasma-workspace-wallpapers arc-kde-wallpapers materia-kde-wallpapers plasma-wallpapers-dynamic variety constantine-backgrounds-kde
 rpm-ostree install inxi nvtop drm_info
 # rpm-ostree install youtube-dl
 # - niri
@@ -72,14 +70,16 @@ rpm-ostree install qt6-qtwayland
 # - sddm
 # - sddm-wayland-sway
 # - sddm-wayland-generic
-rpm-ostree install cosmic-desktop miracle-wm niri xwayland-satellite kvantum
+rpm-ostree install cosmic-desktop miracle-wm niri xwayland-satellite kvantum materia-kde-kvantum
+# stuff for wallpapers
+rpm-ostree install kde-wallpapers plasma-workspace-wallpapers arc-kde-wallpapers materia-kde-wallpapers plasma-wallpapers-dynamic variety constantine-backgrounds-kde
 # rpm-ostree install xdg-desktop-portal-hyprland hyprland-plugins hyprpaper hypridle hyprlock hyprsysteminfo hyprshot hyprnome hyprdim
 # removed: hyprland hyprland-devel cmake meson cpio
 rpm-ostree install strace
 # - sway
 rpm-ostree install systemd trash-cli gdu duc usbip fwupd udisks2 udiskie wev wpaperd virt-install virt-manager virt-top virt-viewer virtio-win edk2-ovmf swtpm swtpm-tools cockpit cockpit-machines cockpit-ostree cockpit-podman w3m samba ddclient
 # - wayfire
-rpm-ostree install tlp powertop
+rpm-ostree install tlp powertop acpi
 # rpm-ostree install power-profiles-daemon
 # - xorg-x11-drv-nvidia-cuda
 # These are needed for pdftools inside emacs
