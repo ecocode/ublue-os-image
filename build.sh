@@ -32,6 +32,7 @@ dnf5 -y copr enable ulysg/xwayland-satellite
 # only for fedora42
 # dnf5 -y copr enable burhanverse/ghostty
 dnf5 -y copr enable atim/kakoune
+dnf5 -y copr enable errornointernet/klassy
 
 curl -fsSL https://fedorapeople.org/groups/virt/virtio-win/virtio-win.repo | tee /etc/yum.repos.d/virtio-win.repo
 
@@ -70,7 +71,7 @@ rpm-ostree install qt6-qtwayland
 # - sddm
 # - sddm-wayland-sway
 # - sddm-wayland-generic
-rpm-ostree install cosmic-desktop miracle-wm niri xwayland-satellite kvantum materia-kde-kvantum
+rpm-ostree install cosmic-desktop miracle-wm niri xwayland-satellite kvantum materia-kde-kvantum klassy
 # stuff for wallpapers
 rpm-ostree install kde-wallpapers plasma-workspace-wallpapers arc-kde-wallpapers materia-kde-wallpapers plasma-wallpapers-dynamic variety constantine-backgrounds-kde
 # rpm-ostree install xdg-desktop-portal-hyprland hyprland-plugins hyprpaper hypridle hyprlock hyprsysteminfo hyprshot hyprnome hyprdim
