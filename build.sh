@@ -26,7 +26,6 @@ dnf5 -y copr enable alebastr/swayr
 dnf5 -y copr enable yalter/niri-git
 # yalter/niri is stable
 dnf5 -y copr enable ryanabx/cosmic-epoch
-# dnf5 -y copr enable meeuw/alot
 # dnf5 -y copr enable ecomaikgolf/typst
 dnf5 -y copr enable ulysg/xwayland-satellite
 # only for fedora42
