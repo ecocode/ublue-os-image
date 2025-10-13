@@ -26,6 +26,7 @@ dnf5 -y copr enable alebastr/swayr
 dnf5 -y copr enable yalter/niri-git
 # yalter/niri is stable
 dnf5 -y copr enable ryanabx/cosmic-epoch
+# dnf5 -y copr enable meeuw/alot
 # dnf5 -y copr enable ecomaikgolf/typst
 dnf5 -y copr enable ulysg/xwayland-satellite
 # only for fedora42
@@ -84,8 +85,6 @@ rpm-ostree install tlp powertop acpi
 # - xorg-x11-drv-nvidia-cuda
 # These are needed for pdftools inside emacs
 rpm-ostree install autoconf automake gcc libpng-devel make ninja-build poppler-devel poppler-glib-devel zlib-devel pkgconf
-
-rpm-ostree install steam
 
 ########################################################################################################
 # NEW SORT BY PURPOSE
