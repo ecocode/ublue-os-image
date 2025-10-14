@@ -40,7 +40,7 @@ ARG SOURCE_IMAGE="bazzite"
 # - (and the above with testing rather than stable)
 # ARG SOURCE_SUFFIX="-nvidia-open"
 # EC: for kinoite and bazzite
-ARG SOURCE_SUFFIX="-nvidia"
+ARG SOURCE_SUFFIX="-nvidia-open"
 
 ## SOURCE_TAG arg must be a version built for the specific image: eg, 39, 40, gts, latest
 ARG SOURCE_TAG="latest"
