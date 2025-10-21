@@ -24,6 +24,7 @@ dnf5 -y copr enable varlad/zellij
 dnf5 -y copr enable wezfurlong/wezterm-nightly
 dnf5 -y copr enable alebastr/swayr
 dnf5 -y copr enable yalter/niri-git
+dnf5 -y copr enable mecattaf/duoRPM
 # yalter/niri is stable
 dnf5 -y copr enable ryanabx/cosmic-epoch
 # dnf5 -y copr enable ecomaikgolf/typst
@@ -70,7 +71,7 @@ rpm-ostree install qt6-qtwayland
 # - sddm
 # - sddm-wayland-sway
 # - sddm-wayland-generic
-rpm-ostree install cosmic-desktop miracle-wm niri xwayland-satellite kvantum materia-kde-kvantum klassy
+rpm-ostree install cosmic-desktop miracle-wm niri scroll xwayland-satellite kvantum materia-kde-kvantum klassy
 # stuff for wallpapers
 rpm-ostree install kde-wallpapers plasma-workspace-wallpapers arc-kde-wallpapers materia-kde-wallpapers plasma-wallpapers-dynamic variety constantine-backgrounds-kde
 # rpm-ostree install xdg-desktop-portal-hyprland hyprland-plugins hyprpaper hypridle hyprlock hyprsysteminfo hyprshot hyprnome hyprdim
