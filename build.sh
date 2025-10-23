@@ -71,7 +71,9 @@ rpm-ostree install qt6-qtwayland
 # - sddm
 # - sddm-wayland-sway
 # - sddm-wayland-generic
-rpm-ostree install cosmic-desktop miracle-wm niri scroll xwayland-satellite kvantum materia-kde-kvantum klassy
+rpm-ostree install miracle-wm scroll xwayland-satellite kvantum materia-kde-kvantum klassy
+rpm-ostree install niri xdg-desktop-portal-gtk
+# removed cosmic-desktop
 # stuff for wallpapers
 rpm-ostree install kde-wallpapers plasma-workspace-wallpapers arc-kde-wallpapers materia-kde-wallpapers plasma-wallpapers-dynamic variety constantine-backgrounds-kde
 # rpm-ostree install xdg-desktop-portal-hyprland hyprland-plugins hyprpaper hypridle hyprlock hyprsysteminfo hyprshot hyprnome hyprdim
