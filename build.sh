@@ -33,6 +33,8 @@ dnf5 -y copr enable ulysg/xwayland-satellite
 # dnf5 -y copr enable burhanverse/ghostty
 dnf5 -y copr enable atim/kakoune
 dnf5 -y copr enable errornointernet/klassy
+dnf5 -y copr enable avengemedia/dms
+dnf5 -y copr enable avengemedia/danklinux
 
 curl -fsSL https://fedorapeople.org/groups/virt/virtio-win/virtio-win.repo | tee /etc/yum.repos.d/virtio-win.repo
 
@@ -72,7 +74,7 @@ rpm-ostree install qt6-qtwayland
 # - sddm-wayland-sway
 # - sddm-wayland-generic
 rpm-ostree install miracle-wm scroll xwayland-satellite kvantum materia-kde-kvantum klassy
-rpm-ostree install niri xdg-desktop-portal-gtk
+rpm-ostree install niri xdg-desktop-portal-gtk dms brightnessctl cava cliphist hyprpicker matugen
 # removed cosmic-desktop
 # stuff for wallpapers
 rpm-ostree install kde-wallpapers plasma-workspace-wallpapers arc-kde-wallpapers materia-kde-wallpapers plasma-wallpapers-dynamic variety constantine-backgrounds-kde
