@@ -19,6 +19,7 @@ dnf5 -y copr enable atim/nushell
 dnf5 -y copr enable atim/starship
 dnf5 -y copr enable nucleo/gocryptfs
 dnf5 -y copr enable peterwu/iosevka
+dnf5 -y copr enable burhanverse/inter-fonts
 # dnf5 -y copr enable solopasha/hyprland
 dnf5 -y copr enable varlad/zellij
 dnf5 -y copr enable wezfurlong/wezterm-nightly
@@ -124,6 +125,9 @@ rpm-ostree install the_silver_searcher ripgrep
 
 # text pdf stuff
 rpm-ostree install odt2txt pandoc zathura zathura-pdf-poppler zathura-djvu zathura-ps a2ps ghostscript okular
+
+# fonts
+rpm-ostree install iosevka-ss05 inter-fonts
 
 # network tools
 rpm-ostree install netscanner nmap sshfs
