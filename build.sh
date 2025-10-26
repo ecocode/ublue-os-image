@@ -18,8 +18,8 @@ dnf5 -y copr enable atim/lazygit
 dnf5 -y copr enable atim/nushell
 dnf5 -y copr enable atim/starship
 dnf5 -y copr enable nucleo/gocryptfs
-dnf5 -y copr enable unixlover69/iosevka
 # dnf5 -y copr enable solopasha/hyprland
+dnf5 -y copr enable aquacash5/nerd-fonts
 dnf5 -y copr enable varlad/zellij
 dnf5 -y copr enable wezfurlong/wezterm-nightly
 dnf5 -y copr enable alebastr/swayr
@@ -126,7 +126,7 @@ rpm-ostree install the_silver_searcher ripgrep
 rpm-ostree install odt2txt pandoc zathura zathura-pdf-poppler zathura-djvu zathura-ps a2ps ghostscript okular
 
 # fonts
-rpm-ostree install iosevka-ss05 rsms-inter-fonts
+rpm-ostree install iosevka-nerd-fonts fira-code-nerd-fonts roboto-mono-nerd-fonts droid-sans-mono-nerd-fonts deja-vu-sans-mono-nerd-fonts monofur-nerd-fonts jet-brains-mono-nerd-fonts rsms-inter-fonts
 
 # network tools
 rpm-ostree install netscanner nmap sshfs
