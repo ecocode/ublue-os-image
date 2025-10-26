@@ -56,16 +56,18 @@ rpm-ostree install bat
 rpm-ostree install blueman cryfs digikam toolbox distrobox dconf-editor dolphin entr
 # epiphany is the package name of gnome web
 # - epiphany
-rpm-ostree install eza fastfetch fbreader fd-find firewall-config foot foot-terminfo fzf gh glances bpytop glibc-locale-source gocryptfs grim gparted gvfs-gphoto2 gvfs-afc hotspot imv
+rpm-ostree install eza fastfetch fbreader fd-find firewall-config fzf gh glances bpytop glibc-locale-source gocryptfs grim gparted gvfs-gphoto2 gvfs-afc hotspot imv
 # - gtk3 gnome-tweaks # removed to test if this removes the gtk portal
 # - insync
 # - intel-media-driver
-rpm-ostree install j4-dmenu-desktop jrnl kalendar kamera kf5-solid kf6-solid kio-gdrive kio-extras-kf5 kio-fuse kio-ftps kjournald kontact ksystemlog kwallet-pam kanshi libimobiledevice libimobiledevice-utils libusb light lm_sensors lshw luarocks lynx macchanger mako mediainfo mpv neochat fractal network-manager-applet NetworkManager-tui catimg
+rpm-ostree install j4-dmenu-desktop jrnl kalendar kamera kf5-solid kf6-solid kio-gdrive kio-extras-kf5 kio-fuse kio-ftps kjournald kontact ksystemlog kwallet-pam kanshi libimobiledevice libimobiledevice-utils libusb light lm_sensors lshw luarocks lynx macchanger mediainfo mpv neochat fractal NetworkManager-tui catimg
+# rpm-ostree install mako network-manager-applet foot foot-terminfo variety 
 rpm-ostree install inxi nvtop drm_info
 # rpm-ostree install youtube-dl
 # - niri
 # - nnn
 # - nvidia-vaapi-driver
+# - miracle-wm river
 rpm-ostree install openssl-devel pasystray perf perl-File-MimeInfo plasma-wayland-protocols
 # removed by EC 2025.01.11 to test on sway auna usb player : pulseaudio-utils
 # - qutebrowser
@@ -75,11 +77,11 @@ rpm-ostree install qt6-qtwayland
 # - sddm
 # - sddm-wayland-sway
 # - sddm-wayland-generic
-rpm-ostree install miracle-wm scroll xwayland-satellite kvantum materia-kde-kvantum klassy
+rpm-ostree install scroll xwayland-satellite kvantum materia-kde-kvantum klassy
 rpm-ostree install niri xdg-desktop-portal-gtk dms brightnessctl cava cliphist hyprpicker matugen
 # removed cosmic-desktop
 # stuff for wallpapers
-rpm-ostree install kde-wallpapers plasma-workspace-wallpapers arc-kde-wallpapers materia-kde-wallpapers plasma-wallpapers-dynamic variety constantine-backgrounds-kde
+rpm-ostree install kde-wallpapers plasma-workspace-wallpapers arc-kde-wallpapers materia-kde-wallpapers plasma-wallpapers-dynamic constantine-backgrounds-kde
 # rpm-ostree install xdg-desktop-portal-hyprland hyprland-plugins hyprpaper hypridle hyprlock hyprsysteminfo hyprshot hyprnome hyprdim
 # removed: hyprland hyprland-devel cmake meson cpio
 rpm-ostree install strace
@@ -98,7 +100,7 @@ rpm-ostree install autoconf automake gcc libpng-devel make ninja-build poppler-d
 
 # sway and wayland
 rpm-ostree install slurp wdisplays wl-clipboard wofi xdg-desktop-portal-wlr swaybg swayr swayidle swaylock sway-systemd waybar wf-recorder
-rpm-ostree install river rofi-wayland bemenu
+rpm-ostree install rofi-wayland bemenu
 rpm-ostree install ibus gnome-keyring
 # for compiling wlroots myself for mangowc - conflicting
 # rpm-ostree install egl-wayland libglvnd-egl libseat-devel wayland-protocols-devel wayland-devel mesa-libEGL-devel mesa-libGLES-devel mesa-dri-drivers xorg-x11-server-Xwayland libgbm-devel libxkbcommon-devel libudev-devel pixman-devel libinput-devel libevdev-devel systemd-devel cairo-devel libpcap-devel json-c-devel pam-devel pango-devel pcre-devel gdk-pixbuf2-devel hwdata-devel
@@ -115,8 +117,8 @@ rpm-ostree install webkit2gtk3 webkit2gtk4.0 gtk4-devel libadwaita-devel libadwa
 
 # development tools
 rpm-ostree install tmux zellij lazygit git zoxide
-rpm-ostree install tilix wezterm kitty kitty-terminfo starship
-# rpm-ostree install ghostty ghostty-fish-completion ghostty-terminfo
+rpm-ostree install wezterm kitty kitty-terminfo starship
+# rpm-ostree install tilix ghostty ghostty-fish-completion ghostty-terminfo
 rpm-ostree install fish nushell direnv
 rpm-ostree install neovim emacs kakoune kakoune-lsp tree-sitter-cli global
 rpm-ostree install the_silver_searcher ripgrep
