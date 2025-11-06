@@ -132,7 +132,8 @@ rpm-ostree install odt2txt pandoc zathura zathura-pdf-poppler zathura-djvu zathu
 rpm-ostree install iosevka-nerd-fonts fira-code-nerd-fonts roboto-mono-nerd-fonts droid-sans-mono-nerd-fonts deja-vu-sans-mono-nerd-fonts monofur-nerd-fonts jet-brains-mono-nerd-fonts rsms-inter-fonts
 
 # network tools
-rpm-ostree install netscanner nmap sshfs
+rpm-ostree install nmap sshfs
+# netscanner not in fedora43
 
 # don't uninstall firefox on aurora and bazzite because it is not installed and error's out
 # rpm-ostree uninstall firefox firefox-langpacks
