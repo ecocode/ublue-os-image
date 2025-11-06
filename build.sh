@@ -56,7 +56,7 @@ rpm-ostree install bat
 rpm-ostree install blueman cryfs digikam toolbox distrobox dconf-editor dolphin entr
 # epiphany is the package name of gnome web
 # - epiphany
-rpm-ostree install eza fastfetch fbreader fd-find firewall-config fzf gh glances bpytop glibc-locale-source gocryptfs grim gparted gvfs-gphoto2 gvfs-afc hotspot imv
+rpm-ostree install eza fastfetch fbreader fd-find firewall-config fzf gh glances glibc-locale-source gocryptfs grim gparted gvfs-gphoto2 gvfs-afc hotspot imv
 # - gtk3 gnome-tweaks # removed to test if this removes the gtk portal
 # - insync
 # - intel-media-driver
