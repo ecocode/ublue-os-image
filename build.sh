@@ -33,12 +33,12 @@ dnf5 -y copr enable ulysg/xwayland-satellite
 # dnf5 -y copr enable burhanverse/ghostty
 dnf5 -y copr enable atim/kakoune
 dnf5 -y copr enable errornointernet/klassy
-dnf5 -y copr enable avengemedia/dms
+dnf5 -y copr enable avengemedia/dms-git
 dnf5 -y copr enable avengemedia/danklinux
 dnf5 -y copr enable errornointernet/quickshell
 
 echo "priority=1" | tee -a /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:yalter:niri-git.repo
-echo "priority=1" | tee -a /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:errornointernet:quickshell.repo
+echo "priority=2" | tee -a /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:errornointernet:quickshell.repo
 
 curl -fsSL https://fedorapeople.org/groups/virt/virtio-win/virtio-win.repo | tee /etc/yum.repos.d/virtio-win.repo
 
