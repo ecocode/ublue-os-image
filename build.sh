@@ -94,7 +94,7 @@ rpm-ostree install tlp powertop acpi
 # rpm-ostree install power-profiles-daemon
 # - xorg-x11-drv-nvidia-cuda
 # These are needed for pdftools inside emacs
-rpm-ostree install autoconf automake gcc libpng-devel make ninja-build poppler-devel poppler-glib-devel zlib-devel pkgconf
+rpm-ostree install autoconf automake gcc libpng-devel make ninja-build poppler-devel poppler-glib-devel pkgconf
 
 ########################################################################################################
 # NEW SORT BY PURPOSE
