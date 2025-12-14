@@ -80,11 +80,11 @@ rpm-ostree install qt6-qtwayland
 # - sddm-wayland-sway
 # - sddm-wayland-generic
 rpm-ostree install scroll xwayland-satellite kvantum materia-kde-kvantum klassy
-rpm-ostree install niri xdg-desktop-portal-gtk dms brightnessctl cava cliphist hyprpicker matugen
+rpm-ostree install niri xdg-desktop-portal-gtk dms brightnessctl cava cliphist matugen
 # removed cosmic-desktop
 # stuff for wallpapers
 rpm-ostree install kde-wallpapers plasma-workspace-wallpapers arc-kde-wallpapers materia-kde-wallpapers plasma-wallpapers-dynamic constantine-backgrounds-kde
-# rpm-ostree install xdg-desktop-portal-hyprland hyprland-plugins hyprpaper hypridle hyprlock hyprsysteminfo hyprshot hyprnome hyprdim
+# rpm-ostree install xdg-desktop-portal-hyprland hyprland-plugins hyprpaper hypridle hyprlock hyprsysteminfo hyprshot hyprnome hyprdim hyprpicker
 # removed: hyprland hyprland-devel cmake meson cpio
 rpm-ostree install strace
 # - sway
