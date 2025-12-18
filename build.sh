@@ -13,7 +13,7 @@ RELEASE="$(rpm -E %fedora)"
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # enable copr repos
-dnf5 -y copr enable alternateved/bleeding-emacs
+# dnf5 -y copr enable alternateved/bleeding-emacs
 dnf5 -y copr enable atim/lazygit
 dnf5 -y copr enable atim/nushell
 dnf5 -y copr enable atim/starship
