@@ -94,8 +94,8 @@ rpm-ostree install tlp powertop acpi
 # rpm-ostree install power-profiles-daemon
 # - xorg-x11-drv-nvidia-cuda
 # These are needed for pdftools inside emacs
-rpm install emacs
-rpm-ostree install autoconf automake gcc libgccjit libpng-devel make ninja-build poppler-devel poppler-glib-devel pkgconf
+# rpm install emacs
+rpm-ostree install autoconf automake gcc libpng-devel make ninja-build poppler-devel poppler-glib-devel pkgconf
 
 ########################################################################################################
 # NEW SORT BY PURPOSE
@@ -124,7 +124,7 @@ rpm-ostree install tmux zellij lazygit git zoxide
 rpm-ostree install wezterm kitty kitty-terminfo starship
 # rpm-ostree install tilix ghostty ghostty-fish-completion ghostty-terminfo
 rpm-ostree install fish nushell direnv
-rpm-ostree install neovim emacs kakoune kakoune-lsp tree-sitter-cli global
+rpm-ostree install neovim kakoune kakoune-lsp tree-sitter-cli global
 rpm-ostree install the_silver_searcher ripgrep
 # rpm-ostree install cuda-toolkit nvidia-gds
 
