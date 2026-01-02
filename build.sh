@@ -138,6 +138,8 @@ rpm-ostree install iosevka-nerd-fonts fira-code-nerd-fonts roboto-mono-nerd-font
 rpm-ostree install nmap sshfs
 # netscanner not in fedora43
 
+rpm-ostree uninstall --idempotent mako
+
 # don't uninstall firefox on aurora and bazzite because it is not installed and error's out
 # rpm-ostree uninstall firefox firefox-langpacks
 
