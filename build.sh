@@ -141,6 +141,7 @@ rpm-ostree install nmap sshfs
 # netscanner not in fedora43
 
 rpm-ostree uninstall --idempotent mako
+rpm-ostree uninstall --idempotent xwaylandvideobridge
 
 # don't uninstall firefox on aurora and bazzite because it is not installed and error's out
 # rpm-ostree uninstall firefox firefox-langpacks
