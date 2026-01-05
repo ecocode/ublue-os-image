@@ -49,6 +49,8 @@ rpm-ostree install terra-release
 # dnf config-manager --add-repo https://developer.download.nvidia.com/compute/cuda/repos/fedora41/x86_64/cuda-fedora41.repo
 # curl -fsSL https://developer.download.nvidia.com/compute/cuda/repos/fedora41/x86_64/cuda-fedora41.repo | tee /etc/yum.repos.d/cuda.repo
 
+rpm-ostree install mesa-vulkan-drivers
+
 # this installs a package from fedora repos
 rpm-ostree install atool akregator mailcap msmtp
 # aerc notmuch
