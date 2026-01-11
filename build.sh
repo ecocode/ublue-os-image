@@ -21,7 +21,7 @@ dnf5 -y copr enable nucleo/gocryptfs
 # dnf5 -y copr enable solopasha/hyprland
 dnf5 -y copr enable aquacash5/nerd-fonts
 dnf5 -y copr enable varlad/zellij
-dnf5 -y copr enable wezfurlong/wezterm-nightly
+# dnf5 -y copr enable wezfurlong/wezterm-nightly
 dnf5 -y copr enable alebastr/swayr
 dnf5 -y copr enable yalter/niri-git
 dnf5 -y copr enable mecattaf/duoRPM
@@ -125,7 +125,7 @@ rpm-ostree install gtk4-devel libadwaita-devel libadwaita
 
 # development tools
 rpm-ostree install tmux zellij lazygit git zoxide
-rpm-ostree install wezterm kitty kitty-terminfo starship
+rpm-ostree install kitty kitty-terminfo starship
 # rpm-ostree install tilix ghostty ghostty-fish-completion ghostty-terminfo
 rpm-ostree install fish nushell direnv
 rpm-ostree install neovim kakoune kakoune-lsp tree-sitter-cli global
