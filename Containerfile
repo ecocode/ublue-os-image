@@ -18,9 +18,10 @@
 
 # ARG SOURCE_IMAGE="sericea"
 # ARG SOURCE_IMAGE="aurora-dx"
+ARG SOURCE_IMAGE="aurora"
 # ARG SOURCE_IMAGE="sway-atomic"
 # ARG SOURCE_IMAGE="kinoite"
-ARG SOURCE_IMAGE="bazzite"
+# ARG SOURCE_IMAGE="bazzite"
 # ARG SOURCE_IMAGE="bluefin"
 
 ## SOURCE_SUFFIX arg should include a hyphen and the appropriate suffix name
