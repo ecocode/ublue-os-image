@@ -145,6 +145,7 @@ rpm-ostree install nmap sshfs
 rpm-ostree uninstall --idempotent mako nano nano-default-editor
 rpm-ostree uninstall --idempotent xwaylandvideobridge
 rpm-ostree uninstall --idempotent steam steam-devices steamdeck-kde-presets-desktop || true
+rpm-ostree uninstall --idempotent tuned tuned-ppd
 
 # don't uninstall firefox on aurora and bazzite because it is not installed and error's out
 # rpm-ostree uninstall firefox firefox-langpacks
