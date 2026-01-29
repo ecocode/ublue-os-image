@@ -173,7 +173,7 @@ I="$I 1password 1password-cli"
 # mkdir -p /opt/1Password
 # dnf5 -y install 1password 1password-cli
 
-echo Launching rpm-ostree install
+echo Launching rpm-ostree install $I
 
 # mkdir -p /usr/local/bin /usr/local/lib
 
