@@ -46,6 +46,13 @@ curl -fsSL https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo | tee
 # dnf config-manager --add-repo https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
 rpm-ostree install terra-release
 
+rpm-ostree uninstall -C --idempotent mako nano nano-default-editor || true
+rpm-ostree uninstall -C --idempotent xwaylandvideobridge || true
+rpm-ostree uninstall -C --idempotent steam steam-devices steamdeck-kde-presets-desktop || true
+rpm-ostree uninstall -C --idempotent tuned tuned-ppd || true
+
+rpm-ostree uninstall -C --idempotent firefox firefox-langpacks || true
+
 # dnf config-manager --add-repo https://developer.download.nvidia.com/compute/cuda/repos/fedora41/x86_64/cuda-fedora41.repo
 # curl -fsSL https://developer.download.nvidia.com/compute/cuda/repos/fedora41/x86_64/cuda-fedora41.repo | tee /etc/yum.repos.d/cuda.repo
 
@@ -140,14 +147,6 @@ rpm-ostree install -C iosevka-nerd-fonts fira-code-nerd-fonts roboto-mono-nerd-f
 # network tools
 rpm-ostree install -C nmap sshfs
 # netscanner not in fedora43
-
-rpm-ostree uninstall -C --idempotent mako nano nano-default-editor || true
-rpm-ostree uninstall -C --idempotent xwaylandvideobridge || true
-rpm-ostree uninstall -C --idempotent steam steam-devices steamdeck-kde-presets-desktop || true
-rpm-ostree uninstall -C --idempotent tuned tuned-ppd || true
-
-# don't uninstall firefox on aurora and bazzite because it is not installed and error's out
-# rpm-ostree uninstall firefox firefox-langpacks
 
 # flatpak install flathub com.brave.Browser
 # flatpak uninstall org.gnome.eog
