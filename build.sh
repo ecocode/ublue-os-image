@@ -46,12 +46,12 @@ curl -fsSL https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo | tee
 # dnf config-manager --add-repo https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
 rpm-ostree install terra-release
 
-rpm-ostree uninstall -C --idempotent mako nano nano-default-editor || true
-rpm-ostree uninstall -C --idempotent xwaylandvideobridge || true
-rpm-ostree uninstall -C --idempotent steam steam-devices steamdeck-kde-presets-desktop || true
-rpm-ostree uninstall -C --idempotent tuned tuned-ppd || true
+rpm-ostree uninstall --idempotent mako nano nano-default-editor || true
+rpm-ostree uninstall --idempotent xwaylandvideobridge || true
+rpm-ostree uninstall --idempotent steam steam-devices steamdeck-kde-presets-desktop || true
+rpm-ostree uninstall --idempotent tuned tuned-ppd || true
 
-rpm-ostree uninstall -C --idempotent firefox firefox-langpacks || true
+rpm-ostree uninstall --idempotent firefox firefox-langpacks || true
 
 # dnf config-manager --add-repo https://developer.download.nvidia.com/compute/cuda/repos/fedora41/x86_64/cuda-fedora41.repo
 # curl -fsSL https://developer.download.nvidia.com/compute/cuda/repos/fedora41/x86_64/cuda-fedora41.repo | tee /etc/yum.repos.d/cuda.repo
