@@ -59,11 +59,14 @@ rpm-ostree uninstall -C --idempotent firefox firefox-langpacks || true
 rpm-ostree install -C mesa-vulkan-drivers
 
 # download and install 1password
-# curl https://downloads.1password.com/linux/keys/1password.asc | tee /etc/pki/rpm-gpg/RPM-GPG-KEY-1password
-# sh -c 'echo -e "[1password]\nname=1Password Stable Channel\nbaseurl=https://downloads.1password.com/linux/rpm/stable/x86_64\nenabled=1\ngpgcheck=1\nrepo_gpgcheck=0\ngpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-1password" > /etc/yum.repos.d/1password.repo'
-
 # rpm-ostree install -C 1password
 # rpm-ostree install -C 1password-cli
+curl -O https://downloads.1password.com/linux/rpm/stable/x86_64/1password-latest.rpm
+curl -O https://downloads.1password.com/linux/rpm/stable/x86_64/1password-cli-latest.rpm
+rpm-ostree install -C ./1password-latest.rpm
+rpm-ostree install -C ./1password-cli-latest.rpm
+rm 1password-latest.rpm
+rm 1password-cli-latest.rpm
 
 # this installs a package from fedora repos
 rpm-ostree install -C atool akregator mailcap msmtp
