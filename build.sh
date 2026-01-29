@@ -144,10 +144,9 @@ I="$I iosevka-nerd-fonts fira-code-nerd-fonts roboto-mono-nerd-fonts droid-sans-
 I="$I nmap sshfs"
 # netscanner not in fedora43
 
-# these are not installed : mako
-rpm-ostree uninstall --idempotent nano nano-default-editor || true
+rpm-ostree uninstall --idempotent mako nano nano-default-editor || true
 rpm-ostree uninstall --idempotent xwaylandvideobridge || true
-# rpm-ostree uninstall --idempotent steam steam-devices steamdeck-kde-presets-desktop || true
+rpm-ostree uninstall --idempotent steam steam-devices steamdeck-kde-presets-desktop || true
 rpm-ostree uninstall --idempotent tuned tuned-ppd || true
 
 # don't uninstall firefox on aurora and bazzite because it is not installed and error's out
