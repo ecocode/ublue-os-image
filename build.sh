@@ -173,16 +173,10 @@ I="$I 1password 1password-cli"
 # mkdir -p /opt/1Password
 # dnf5 -y install 1password 1password-cli
 
-echo Launching rpm-ostree install
-
 # mkdir -p /usr/local/bin /usr/local/lib
 
 rpm-ostree install $I
 
-echo Finished rpm-ostree install
-
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
-
-echo Finished build.sh
