@@ -149,8 +149,6 @@ rpm-ostree uninstall -C --idempotent tuned tuned-ppd || true
 # don't uninstall firefox on aurora and bazzite because it is not installed and error's out
 # rpm-ostree uninstall firefox firefox-langpacks
 
-rpm-ostree install -C gimp3 dia flameshot
-
 # flatpak install flathub com.brave.Browser
 # flatpak uninstall org.gnome.eog
 
@@ -171,6 +169,8 @@ rpm-ostree install -C 1password 1password-cli
 # dnf5 -y install 1password 1password-cli
 
 # mkdir -p /usr/local/bin /usr/local/lib
+
+rpm-ostree install -C gimp3 dia flameshot
 
 #### Example for enabling a System Unit File
 
