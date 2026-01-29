@@ -61,12 +61,12 @@ rpm-ostree install -C mesa-vulkan-drivers
 # download and install 1password
 # rpm-ostree install -C 1password
 # rpm-ostree install -C 1password-cli
-curl -O https://downloads.1password.com/linux/rpm/stable/x86_64/1password-latest.rpm
-curl -O https://downloads.1password.com/linux/rpm/stable/x86_64/1password-cli-latest.rpm
-rpm-ostree install -C ./1password-latest.rpm
-rpm-ostree install -C ./1password-cli-latest.rpm
-rm 1password-latest.rpm
-rm 1password-cli-latest.rpm
+curl --output-dir /tmp -O https://downloads.1password.com/linux/rpm/stable/x86_64/1password-latest.rpm
+curl --output-dir /tmp -O https://downloads.1password.com/linux/rpm/stable/x86_64/1password-cli-latest.rpm
+# rpm-ostree install -C ./1password-latest.rpm
+# rpm-ostree install -C ./1password-cli-latest.rpm
+# rm 1password-latest.rpm
+# rm 1password-cli-latest.rpm
 
 # this installs a package from fedora repos
 rpm-ostree install -C atool akregator mailcap msmtp
