@@ -44,118 +44,116 @@ curl -fsSL https://fedorapeople.org/groups/virt/virtio-win/virtio-win.repo | tee
 
 curl -fsSL https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo | tee /etc/yum.repos.d/terra.repo
 
-I1=""
-I2=""
-I3=""
-
+I=""
 
 # dnf config-manager --add-repo https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
-I1="$I1 terra-release"
+I="$I terra-release"
 
 # dnf config-manager --add-repo https://developer.download.nvidia.com/compute/cuda/repos/fedora41/x86_64/cuda-fedora41.repo
 # curl -fsSL https://developer.download.nvidia.com/compute/cuda/repos/fedora41/x86_64/cuda-fedora41.repo | tee /etc/yum.repos.d/cuda.repo
 
-I1="$I1 mesa-vulkan-drivers"
+I="$I mesa-vulkan-drivers"
 
 # this installs a package from fedora repos
-I1="$I1 atool akregator mailcap msmtp"
+I="$I atool akregator mailcap msmtp"
 # aerc notmuch
 # - appimagelauncher
-I1="$I1 bat"
+I="$I bat"
 # - bettercap
-I1="$I1 blueman cryfs digikam toolbox distrobox dconf-editor dolphin entr thunar thunar-archive-plugin insync"
+I="$I blueman cryfs digikam toolbox distrobox dconf-editor dolphin entr thunar thunar-archive-plugin insync"
 # epiphany is the package name of gnome web
 # - epiphany
-I1="$I1 eza fastfetch fbreader fd-find firewall-config fzf gh glances glibc-locale-source gocryptfs grim gparted gvfs-gphoto2 gvfs-afc hotspot imv"
+I="$I eza fastfetch fbreader fd-find firewall-config fzf gh glances glibc-locale-source gocryptfs grim gparted gvfs-gphoto2 gvfs-afc hotspot imv"
 # - gtk3 gnome-tweaks # removed to test if this removes the gtk portal
 # - insync
 # - intel-media-driver
-I1="$I1 j4-dmenu-desktop jrnl kalendar kamera kf5-solid kf6-solid kio-gdrive kio-extras-kf5 kio-fuse kio-ftps kjournald kontact ksystemlog kwallet-pam kanshi libimobiledevice libimobiledevice-utils libusb light lm_sensors lshw luarocks lynx macchanger mediainfo mpv neochat fractal catimg NetworkManager-tui"
+I="$I j4-dmenu-desktop jrnl kalendar kamera kf5-solid kf6-solid kio-gdrive kio-extras-kf5 kio-fuse kio-ftps kjournald kontact ksystemlog kwallet-pam kanshi libimobiledevice libimobiledevice-utils libusb light lm_sensors lshw luarocks lynx macchanger mediainfo mpv neochat fractal catimg NetworkManager-tui"
 
 # rpm-ostree install mako network-manager-applet foot foot-terminfo variety 
-I1="$I1 inxi nvtop drm_info"
+I="$I inxi nvtop drm_info"
 # rpm-ostree install youtube-dl
 # - niri
 # - nnn
 # - nvidia-vaapi-driver
 # - miracle-wm river
-I1="$I1 openssl-devel pasystray perf perl-File-MimeInfo plasma-wayland-protocols"
+I="$I openssl-devel pasystray perf perl-File-MimeInfo plasma-wayland-protocols"
 # removed by EC 2025.01.11 to test on sway auna usb player : pulseaudio-utils
 # - qutebrowser
 # - qt5-qtwebengine-freeworld
-I1="$I1 qt6-qtwayland"
+I="$I qt6-qtwayland"
 # - qtile
 # - sddm
 # - sddm-wayland-sway
 # - sddm-wayland-generic
-I1="$I1 scroll xwayland-satellite kvantum materia-kde-kvantum klassy"
-I1="$I1 niri xdg-desktop-portal-gtk dms brightnessctl cava cliphist matugen"
+I="$I scroll xwayland-satellite kvantum materia-kde-kvantum klassy"
+I="$I niri xdg-desktop-portal-gtk dms brightnessctl cava cliphist matugen"
 # removed cosmic-desktop
 # stuff for wallpapers
-I2="$I2 kde-wallpapers plasma-workspace-wallpapers arc-kde-wallpapers materia-kde-wallpapers plasma-wallpapers-dynamic constantine-backgrounds-kde"
+I="$I kde-wallpapers plasma-workspace-wallpapers arc-kde-wallpapers materia-kde-wallpapers plasma-wallpapers-dynamic constantine-backgrounds-kde"
 # rpm-ostree install xdg-desktop-portal-hyprland hyprland-plugins hyprpaper hypridle hyprlock hyprsysteminfo hyprshot hyprnome hyprdim hyprpicker
 # removed: hyprland hyprland-devel cmake meson cpio
-I2="$I2 strace"
+I="$I strace"
 # - sway
-I2="$I2 systemd trash-cli gdu duc usbip fwupd udisks2 udiskie wev wpaperd virt-install virt-manager virt-top virt-viewer virtio-win edk2-ovmf swtpm swtpm-tools cockpit cockpit-machines cockpit-ostree cockpit-podman w3m samba ddclient"
+I="$I systemd trash-cli gdu duc usbip fwupd udisks2 udiskie wev wpaperd virt-install virt-manager virt-top virt-viewer virtio-win edk2-ovmf swtpm swtpm-tools cockpit cockpit-machines cockpit-ostree cockpit-podman w3m samba ddclient"
 # - wayfire
-I2="$I2 tlp powertop acpi"
+I="$I tlp powertop acpi"
 # rpm-ostree install power-profiles-daemon
 # - xorg-x11-drv-nvidia-cuda
 # These are needed for pdftools inside emacs
 # rpm install emacs
-I2="$I2 autoconf automake gcc libpng-devel make ninja-build poppler-devel poppler-glib-devel pkgconf"
+I="$I autoconf automake gcc libpng-devel make ninja-build poppler-devel poppler-glib-devel pkgconf"
 
 ########################################################################################################
 # NEW SORT BY PURPOSE
 ########################################################################################################
 
 # sway and wayland
-I2="$I2 slurp wdisplays wl-clipboard wofi xdg-desktop-portal-wlr swaybg swayr swayidle swaylock sway-systemd waybar wf-recorder"
-I2="$I2 rofi-wayland bemenu"
-I2="$I2 ibus gnome-keyring"
+I="$I slurp wdisplays wl-clipboard wofi xdg-desktop-portal-wlr swaybg swayr swayidle swaylock sway-systemd waybar wf-recorder"
+I="$I rofi-wayland bemenu"
+I="$I ibus gnome-keyring"
 # for compiling wlroots myself for mangowc - conflicting
 # rpm-ostree install egl-wayland libglvnd-egl libseat-devel wayland-protocols-devel wayland-devel mesa-libEGL-devel mesa-libGLES-devel mesa-dri-drivers xorg-x11-server-Xwayland libgbm-devel libxkbcommon-devel libudev-devel pixman-devel libinput-devel libevdev-devel systemd-devel cairo-devel libpcap-devel json-c-devel pam-devel pango-devel pcre-devel gdk-pixbuf2-devel hwdata-devel
 # rpm-ostree install libdrm libdrm-devel libdisplay-info
 
 # system tools
-I3="$I3 borgbackup vorta"
+I="$I borgbackup vorta"
 
 # gtk libs
-I3="$I3 gtk4-devel libadwaita-devel libadwaita"
+I="$I gtk4-devel libadwaita-devel libadwaita"
 # FC43 doesn't have webkit2gtk3 webkit2gtk4.0
 
 # taskwarrior
 # rpm-ostree install taskopen
 
 # development tools
-I3="$I3 tmux zellij lazygit git zoxide"
-I3="$I3 kitty kitty-terminfo starship"
+I="$I tmux zellij lazygit git zoxide"
+I="$I kitty kitty-terminfo starship"
 # rpm-ostree install tilix ghostty ghostty-fish-completion ghostty-terminfo
-I3="$I3 fish nushell direnv"
-I3="$I3 neovim kakoune kakoune-lsp tree-sitter-cli global"
-I3="$I3 the_silver_searcher ripgrep"
+I="$I fish nushell direnv"
+I="$I neovim kakoune kakoune-lsp tree-sitter-cli global"
+I="$I the_silver_searcher ripgrep"
 # rpm-ostree install cuda-toolkit nvidia-gds
 
 # text pdf stuff
-I3="$I3 odt2txt pandoc zathura zathura-pdf-poppler zathura-djvu zathura-ps a2ps ghostscript okular"
+I="$I odt2txt pandoc zathura zathura-pdf-poppler zathura-djvu zathura-ps a2ps ghostscript okular"
 
 # fonts
-I3="$I3 iosevka-nerd-fonts fira-code-nerd-fonts roboto-mono-nerd-fonts droid-sans-mono-nerd-fonts deja-vu-sans-mono-nerd-fonts monofur-nerd-fonts jet-brains-mono-nerd-fonts rsms-inter-fonts"
+I="$I iosevka-nerd-fonts fira-code-nerd-fonts roboto-mono-nerd-fonts droid-sans-mono-nerd-fonts deja-vu-sans-mono-nerd-fonts monofur-nerd-fonts jet-brains-mono-nerd-fonts rsms-inter-fonts"
 
 # network tools
-I3="$I3 nmap sshfs"
+I="$I nmap sshfs"
 # netscanner not in fedora43
 
-rpm-ostree uninstall --idempotent mako nano nano-default-editor || true
+# these are not installed : mako
+rpm-ostree uninstall --idempotent nano nano-default-editor || true
 rpm-ostree uninstall --idempotent xwaylandvideobridge || true
-rpm-ostree uninstall --idempotent steam steam-devices steamdeck-kde-presets-desktop || true
+# rpm-ostree uninstall --idempotent steam steam-devices steamdeck-kde-presets-desktop || true
 rpm-ostree uninstall --idempotent tuned tuned-ppd || true
 
 # don't uninstall firefox on aurora and bazzite because it is not installed and error's out
 # rpm-ostree uninstall firefox firefox-langpacks
 
-I3="$I3 gimp3 dia flameshot"
+I="$I gimp3 dia flameshot"
 
 # flatpak install flathub com.brave.Browser
 # flatpak uninstall org.gnome.eog
@@ -169,20 +167,18 @@ I3="$I3 gimp3 dia flameshot"
 # curl https://downloads.1password.com/linux/keys/1password.asc | tee /etc/pki/rpm-gpg/RPM-GPG-KEY-1password
 # sh -c 'echo -e "[1password]\nname=1Password Stable Channel\nbaseurl=https://downloads.1password.com/linux/rpm/stable/x86_64\nenabled=1\ngpgcheck=1\nrepo_gpgcheck=0\ngpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-1password" > /etc/yum.repos.d/1password.repo'
 
-I3="$I3 1password 1password-cli"
+I="$I 1password 1password-cli"
 
 # sh -c 'echo -e "[1password]\nname=1Password Stable Channel\nbaseurl=https://downloads.1password.com/linux/rpm/stable/\$basearch\nenabled=1\ngpgcheck=1\nrepo_gpgcheck=0\ngpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-1password" > /etc/yum.repos.d/1password.repo'
 # curl -O https://downloads.1password.com/linux/rpm/stable/x86_64/1password-latest.rpm
 # mkdir -p /opt/1Password
 # dnf5 -y install 1password 1password-cli
 
-echo Launching rpm-ostree install
+echo Launching rpm-ostree install $I
 
 # mkdir -p /usr/local/bin /usr/local/lib
 
-rpm-ostree install $I1
-rpm-ostree install $I2
-rpm-ostree install $I3
+rpm-ostree install $I
 
 echo Finished rpm-ostree install
 
