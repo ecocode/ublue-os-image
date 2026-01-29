@@ -58,6 +58,9 @@ FROM ghcr.io/ublue-os/${SOURCE_IMAGE}${SOURCE_SUFFIX}:${SOURCE_TAG}
 ## the following RUN directive does all the things required to run "build.sh" as recommended.
 
 COPY build.sh /tmp/build.sh
+## 2026.01.29 - added to install insync in the image
+rpm --import https://d2t3ff60b2tol4.cloudfront.net/repomd.xml.key
+COPY etc/yum.repos.d/insync.repo /etc/yum.repos.d/insync.repo
 
 RUN mkdir -p /var/lib/alternatives && \
     /tmp/build.sh && \
