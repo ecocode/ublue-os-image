@@ -61,8 +61,9 @@ rpm-ostree install -C mesa-vulkan-drivers
 # download and install 1password
 # rpm-ostree install -C 1password
 # rpm-ostree install -C 1password-cli
-curl --output-dir /tmp -O https://downloads.1password.com/linux/rpm/stable/x86_64/1password-latest.rpm
-curl --output-dir /tmp -O https://downloads.1password.com/linux/rpm/stable/x86_64/1password-cli-latest.rpm
+mkdir -p /usr/Downloads
+curl --output-dir /usr/Downloads -O https://downloads.1password.com/linux/rpm/stable/x86_64/1password-latest.rpm
+curl --output-dir /usr/Downloads -O https://downloads.1password.com/linux/rpm/stable/x86_64/1password-cli-latest.rpm
 # rpm-ostree install -C ./1password-latest.rpm
 # rpm-ostree install -C ./1password-cli-latest.rpm
 # rm 1password-latest.rpm
