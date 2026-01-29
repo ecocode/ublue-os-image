@@ -57,7 +57,7 @@ rpm-ostree install atool akregator mailcap msmtp
 # - appimagelauncher
 rpm-ostree install bat
 # - bettercap
-rpm-ostree install blueman cryfs digikam toolbox distrobox dconf-editor dolphin entr thunar thunar-archive-plugin
+rpm-ostree install blueman cryfs digikam toolbox distrobox dconf-editor dolphin entr thunar thunar-archive-plugin insync
 # epiphany is the package name of gnome web
 # - epiphany
 rpm-ostree install eza fastfetch fbreader fd-find firewall-config fzf gh glances glibc-locale-source gocryptfs grim gparted gvfs-gphoto2 gvfs-afc hotspot imv
