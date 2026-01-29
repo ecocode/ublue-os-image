@@ -58,9 +58,15 @@ FROM ghcr.io/ublue-os/${SOURCE_IMAGE}${SOURCE_SUFFIX}:${SOURCE_TAG}
 ## the following RUN directive does all the things required to run "build.sh" as recommended.
 
 COPY build.sh /tmp/build.sh
+
 ## 2026.01.29 - added to install insync in the image
 RUN rpm --import https://d2t3ff60b2tol4.cloudfront.net/repomd.xml.key
 COPY etc/yum.repos.d/insync.repo /etc/yum.repos.d/insync.repo
+
+## 2026.01.29 - added to install 1password in the image
+RUN rpm --import https://downloads.1password.com/linux/keys/1password.asc
+COPY etc/yum.repos.d/1password.repo /etc/yum.repos.d/1password.repo
+# RUN sh -c 'echo -e "[1password]\nname=1Password Stable Channel\nbaseurl=https://downloads.1password.com/linux/rpm/stable/\$basearch\nenabled=1\ngpgcheck=1\nrepo_gpgcheck=1\ngpgkey=\"https://downloads.1password.com/linux/keys/1password.asc\"" > /etc/yum.repos.d/1password.repo'
 
 RUN mkdir -p /var/lib/alternatives && \
     /tmp/build.sh && \
