@@ -36,6 +36,7 @@ dnf5 -y copr enable errornointernet/klassy
 dnf5 -y copr enable avengemedia/dms-git
 dnf5 -y copr enable avengemedia/danklinux
 dnf5 -y copr enable errornointernet/quickshell
+dnf5 -y copr enable dennemann/MangoWC
 
 echo "priority=1" | tee -a /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:yalter:niri-git.repo
 echo "priority=2" | tee -a /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:errornointernet:quickshell.repo
@@ -101,7 +102,7 @@ rpm-ostree install -C qt6-qtwayland
 # - sddm-wayland-sway
 # - sddm-wayland-generic
 rpm-ostree install -C scroll xwayland-satellite kvantum materia-kde-kvantum klassy
-rpm-ostree install -C niri xdg-desktop-portal-gtk dms brightnessctl cava cliphist matugen
+rpm-ostree install -C niri mangowc xdg-desktop-portal-gtk dms brightnessctl cava cliphist matugen
 # removed cosmic-desktop
 # stuff for wallpapers
 rpm-ostree install -C kde-wallpapers plasma-workspace-wallpapers arc-kde-wallpapers materia-kde-wallpapers plasma-wallpapers-dynamic constantine-backgrounds-kde
