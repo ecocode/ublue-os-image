@@ -37,6 +37,7 @@ dnf5 -y copr enable avengemedia/dms-git
 dnf5 -y copr enable avengemedia/danklinux
 dnf5 -y copr enable errornointernet/quickshell
 dnf5 -y copr enable dennemann/MangoWC
+dnf5 -y copr enable @ai-ml/nvidia-container-toolkit
 
 echo "priority=1" | tee -a /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:yalter:niri-git.repo
 echo "priority=2" | tee -a /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:errornointernet:quickshell.repo
@@ -58,6 +59,7 @@ rpm-ostree uninstall --idempotent firefox firefox-langpacks || true
 # curl -fsSL https://developer.download.nvidia.com/compute/cuda/repos/fedora41/x86_64/cuda-fedora41.repo | tee /etc/yum.repos.d/cuda.repo
 
 rpm-ostree install -C mesa-vulkan-drivers
+rpm-ostree install -C nvidia-container-toolkit nvidia-container-toolkit-selinux
 
 # download and install 1password
 # rpm-ostree install -C 1password
