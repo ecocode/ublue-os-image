@@ -37,7 +37,7 @@ dnf5 -y copr enable avengemedia/dms-git
 dnf5 -y copr enable avengemedia/danklinux
 dnf5 -y copr enable errornointernet/quickshell
 dnf5 -y copr enable dennemann/MangoWC
-dnf5 -y copr enable @ai-ml/nvidia-container-toolkit
+# dnf5 -y copr enable @ai-ml/nvidia-container-toolkit
 
 echo "priority=1" | tee -a /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:yalter:niri-git.repo
 echo "priority=2" | tee -a /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:errornointernet:quickshell.repo
