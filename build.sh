@@ -31,7 +31,7 @@ dnf5 -y copr enable ryanabx/cosmic-epoch
 dnf5 -y copr enable ulysg/xwayland-satellite
 # only for fedora42
 # dnf5 -y copr enable burhanverse/ghostty
-dnf5 -y copr enable atim/kakoune
+# dnf5 -y copr enable atim/kakoune
 dnf5 -y copr enable errornointernet/klassy
 dnf5 -y copr enable avengemedia/dms-git
 dnf5 -y copr enable avengemedia/danklinux
@@ -148,7 +148,7 @@ rpm-ostree install -C tmux zellij lazygit git zoxide
 rpm-ostree install -C kitty kitty-terminfo starship
 # rpm-ostree install tilix ghostty ghostty-fish-completion ghostty-terminfo
 rpm-ostree install -C fish nushell direnv
-rpm-ostree install -C neovim kakoune kakoune-lsp tree-sitter-cli global
+# rpm-ostree install -C neovim kakoune tree-sitter-cli global
 rpm-ostree install -C the_silver_searcher ripgrep
 # rpm-ostree install cuda-toolkit nvidia-gds
 
