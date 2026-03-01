@@ -59,7 +59,8 @@ rpm-ostree uninstall --idempotent firefox firefox-langpacks || true
 # curl -fsSL https://developer.download.nvidia.com/compute/cuda/repos/fedora41/x86_64/cuda-fedora41.repo | tee /etc/yum.repos.d/cuda.repo
 
 rpm-ostree install -C mesa-vulkan-drivers
-rpm-ostree install -C nvidia-container-toolkit nvidia-container-toolkit-selinux
+rpm-ostree install -C nvidia-container-toolkit
+# nvidia-container-toolkit-selinux
 
 # download and install 1password
 # rpm-ostree install -C 1password
