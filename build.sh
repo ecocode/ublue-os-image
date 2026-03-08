@@ -46,7 +46,11 @@ curl -fsSL https://fedorapeople.org/groups/virt/virtio-win/virtio-win.repo | tee
 
 curl -fsSL https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo | tee /etc/yum.repos.d/terra.repo
 # dnf config-manager --add-repo https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
-rpm-ostree install terra-release
+
+# this should remove all cache
+rpm-ostree cleanup -m
+
+rpm-ostree install -C terra-release
 
 rpm-ostree uninstall --idempotent mako nano nano-default-editor || true
 rpm-ostree uninstall --idempotent xwaylandvideobridge || true
@@ -146,7 +150,7 @@ rpm-ostree install -C gtk4-devel libadwaita-devel libadwaita
 
 # development tools
 rpm-ostree install -C tmux zellij lazygit git zoxide
-rpm-ostree install kitty kitty-terminfo wezterm starship
+rpm-ostree install -C kitty kitty-terminfo wezterm starship
 # rpm-ostree install tilix ghostty ghostty-fish-completion ghostty-terminfo
 rpm-ostree install -C fish nushell direnv
 # rpm-ostree install -C neovim kakoune tree-sitter-cli global
