@@ -21,7 +21,7 @@ dnf5 -y copr enable nucleo/gocryptfs
 # dnf5 -y copr enable solopasha/hyprland
 dnf5 -y copr enable aquacash5/nerd-fonts
 dnf5 -y copr enable varlad/zellij
-# dnf5 -y copr enable wezfurlong/wezterm-nightly
+dnf5 -y copr enable wezfurlong/wezterm-nightly
 dnf5 -y copr enable alebastr/swayr
 dnf5 -y copr enable yalter/niri-git
 dnf5 -y copr enable mecattaf/duoRPM
@@ -146,7 +146,7 @@ rpm-ostree install -C gtk4-devel libadwaita-devel libadwaita
 
 # development tools
 rpm-ostree install -C tmux zellij lazygit git zoxide
-rpm-ostree install -C kitty kitty-terminfo starship
+rpm-ostree install -C kitty kitty-terminfo wezterm starship
 # rpm-ostree install tilix ghostty ghostty-fish-completion ghostty-terminfo
 rpm-ostree install -C fish nushell direnv
 # rpm-ostree install -C neovim kakoune tree-sitter-cli global
@@ -176,5 +176,5 @@ rpm-ostree install -C nmap sshfs
 rpm-ostree install -C gimp3 dia flameshot
 
 #### Example for enabling a System Unit File
-
-systemctl enable podman.socket
+# we only use a --user podman.socket
+# systemctl enable podman.socket
