@@ -18,10 +18,10 @@
 
 # ARG SOURCE_IMAGE="sericea"
 # ARG SOURCE_IMAGE="aurora-dx"
-# ARG SOURCE_IMAGE="aurora"
+ARG SOURCE_IMAGE="aurora"
 # ARG SOURCE_IMAGE="sway-atomic"
 # ARG SOURCE_IMAGE="kinoite"
-ARG SOURCE_IMAGE="bazzite"
+# ARG SOURCE_IMAGE="bazzite"
 # ARG SOURCE_IMAGE="bluefin"
 
 ## SOURCE_SUFFIX arg should include a hyphen and the appropriate suffix name
@@ -40,9 +40,9 @@ ARG SOURCE_IMAGE="bazzite"
 # - stable-zfs
 # - stable-nvidia-zfs
 # - (and the above with testing rather than stable)
-ARG SOURCE_SUFFIX="-nvidia-open"
+# ARG SOURCE_SUFFIX="-nvidia-open"
 # EC: for kinoite and bazzite
-# ARG SOURCE_SUFFIX="-nvidia"
+ARG SOURCE_SUFFIX="-nvidia"
 
 ## SOURCE_TAG arg must be a version built for the specific image: eg, 39, 40, gts, latest
 ARG SOURCE_TAG="latest"
@@ -50,7 +50,8 @@ ARG SOURCE_TAG="latest"
 
 ### 2. SOURCE IMAGE
 ## this is a standard Containerfile FROM using the build ARGs above to select the right upstream image
-FROM ghcr.io/ublue-os/${SOURCE_IMAGE}${SOURCE_SUFFIX}:${SOURCE_TAG}
+# FROM ghcr.io/ublue-os/${SOURCE_IMAGE}${SOURCE_SUFFIX}:${SOURCE_TAG}
+FROM ghcr.io/ublue-os/kinoite-nvidia:latest
 # FROM ghcr.io/wayblueorg/hyprland-nvidia:latest
 
 ### 3. MODIFICATIONS
