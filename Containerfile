@@ -18,10 +18,10 @@
 
 # ARG SOURCE_IMAGE="sericea"
 # ARG SOURCE_IMAGE="aurora-dx"
-ARG SOURCE_IMAGE="aurora"
+# ARG SOURCE_IMAGE="aurora"
 # ARG SOURCE_IMAGE="sway-atomic"
 # ARG SOURCE_IMAGE="kinoite"
-# ARG SOURCE_IMAGE="bazzite"
+ARG SOURCE_IMAGE="bazzite"
 # ARG SOURCE_IMAGE="bluefin"
 
 ## SOURCE_SUFFIX arg should include a hyphen and the appropriate suffix name
@@ -70,6 +70,14 @@ RUN rpm --import https://downloads.1password.com/linux/keys/1password.asc
 # COPY etc/pki/rpm-gpg/1password.asc /etc/pki/rpm-gpg/1password.asc
 COPY etc/yum.repos.d/1password.repo /etc/yum.repos.d/1password.repo
 # RUN sh -c 'echo -e "[1password]\nname=1Password Stable Channel\nbaseurl=https://downloads.1password.com/linux/rpm/stable/\$basearch\nenabled=1\ngpgcheck=1\nrepo_gpgcheck=1\ngpgkey=\"https://downloads.1password.com/linux/keys/1password.asc\"" > /etc/yum.repos.d/1password.repo'
+
+# MKDIR /custom-rpm
+# COPY custom-rpm/kyodialog-9.3-0.x86_64.rpm /custom-rpm/kyodialog-9.3-0.x86_64.rpm
+# COPY custom-rpm/insync-3.9.4.60020-fc40.x86_64.rpm /custom-rpm/insync-3.9.4.60020-fc40.x86_64.rpm
+# COPY custom-rpm/ARES-Commander-2026-26.3.1.4145-x86_64.rpm /custom-rpm/ARES-Commander-2026-26.3.1.4145-x86_64.rpm
+# COPY custom-rpm/expressvpn-3.69.0.0-1.x86_64.rpm /custom-rpm/expressvpn-3.69.0.0-1.x86_64.rpm
+
+
 
 RUN mkdir -p /var/lib/alternatives && \
     /tmp/build.sh && \

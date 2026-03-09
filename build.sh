@@ -179,6 +179,12 @@ rpm-ostree install -C nmap sshfs
 
 rpm-ostree install -C gimp3 dia flameshot
 
+# rpm-ostree install /custom-rpm/kyodialog-9.3-0.x86_64.rpm
+# rpm-ostree install /custom-rpm/insync-3.9.4.60020-fc40.x86_64.rpm
+# rpm-ostree install /custom-rpm/ARES-Commander-2026-26.3.1.4145-x86_64.rpm
+# rpm-ostree install /custom-rpm/expressvpn-3.69.0.0-1.x86_64.rpm
+
+
 #### Example for enabling a System Unit File
 # we only use a --user podman.socket
 # systemctl enable podman.socket
