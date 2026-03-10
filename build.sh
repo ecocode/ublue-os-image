@@ -57,6 +57,7 @@ rpm-ostree uninstall --idempotent mako nano nano-default-editor || true
 rpm-ostree uninstall --idempotent xwaylandvideobridge || true
 rpm-ostree uninstall --idempotent steam steam-devices steamdeck-kde-presets-desktop || true
 rpm-ostree uninstall --idempotent tuned tuned-ppd || true
+rpm-ostree uninstall --idempotent pasystray blueman || true
 
 rpm-ostree uninstall --idempotent firefox firefox-langpacks || true
 
