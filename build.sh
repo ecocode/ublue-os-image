@@ -188,6 +188,7 @@ rpm-ostree install -C gimp3 dia flameshot
 # this seems not allowed
 # rpm-ostree install https://files.graebert.com/ares/26.3.1.4145/ARES-Commander-2026-26.3.1.4145-x86_64.rpm
 rpm-ostree install -C /usr/Downloads/ares-latest.rpm
+rm /usr/Downloads/ares-latest.rpm
 
 
 #### Example for enabling a System Unit File
