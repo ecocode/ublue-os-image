@@ -53,7 +53,7 @@ ARG SOURCE_TAG="latest"
 # FROM ghcr.io/ublue-os/${SOURCE_IMAGE}${SOURCE_SUFFIX}:${SOURCE_TAG}
 # FROM ghcr.io/ublue-os/kinoite-nvidia:latest
 # FROM ghcr.io/ublue-os/aurora-nvidia-open:latest
-FROM ghcr.io/ublue-os/bluefin-nvidia-open:latest
+FROM ghcr.io/ublue-os/bluefin-nvidia-open:stable
 # FROM ghcr.io/wayblueorg/hyprland-nvidia:latest
 
 ### 3. MODIFICATIONS
