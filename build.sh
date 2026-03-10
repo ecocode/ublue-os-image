@@ -102,7 +102,9 @@ rpm-ostree install -C inxi nvtop drm_info
 # - nnn
 # - nvidia-vaapi-driver
 # - miracle-wm river
-rpm-ostree install -C openssl-devel pasystray perf perl-File-MimeInfo plasma-wayland-protocols
+rpm-ostree install -C openssl-devel perf perl-File-MimeInfo plasma-wayland-protocols
+# - pasystray
+
 # removed by EC 2025.01.11 to test on sway auna usb player : pulseaudio-utils
 # - qutebrowser
 # - qt5-qtwebengine-freeworld
