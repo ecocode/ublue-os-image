@@ -72,7 +72,8 @@ rpm-ostree install -C nvidia-container-toolkit
 mkdir -p /usr/Downloads
 curl --output-dir /usr/Downloads -O https://downloads.1password.com/linux/rpm/stable/x86_64/1password-latest.rpm
 curl --output-dir /usr/Downloads -O https://downloads.1password.com/linux/rpm/stable/x86_64/1password-cli-latest.rpm
-curl --follow --output-dir /usr/Downloads -o ares-latest.rpm https://www.graebert.com/cad-software/download/ares-commander/linux/rpm/latest
+# curl --follow --output-dir /usr/Downloads -o ares-latest.rpm https://www.graebert.com/cad-software/download/ares-commander/linux/rpm/latest
+curl --output-dir /usr/Downloads -o ares-latest.rpm https://files.graebert.com/ares/26.3.1.4145/ARES-Commander-2026-26.3.1.4145-x86_64.rpm
 # rpm-ostree install -C ./1password-latest.rpm
 # rpm-ostree install -C ./1password-cli-latest.rpm
 # rm 1password-latest.rpm
