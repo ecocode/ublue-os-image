@@ -33,8 +33,9 @@ dnf5 -y copr enable ulysg/xwayland-satellite
 # dnf5 -y copr enable burhanverse/ghostty
 # dnf5 -y copr enable atim/kakoune
 dnf5 -y copr enable errornointernet/klassy
-dnf5 -y copr enable avengemedia/dms-git
-dnf5 -y copr enable avengemedia/danklinux
+# dnf5 -y copr enable avengemedia/dms-git
+dnf5 -y copr enable avengemedia/dms
+# dnf5 -y copr enable avengemedia/danklinux
 dnf5 -y copr enable errornointernet/quickshell
 dnf5 -y copr enable dennemann/MangoWC
 # dnf5 -y copr enable @ai-ml/nvidia-container-toolkit
