@@ -184,7 +184,7 @@ rpm-ostree install -C gimp3 dia flameshot
 # rpm-ostree install /custom-rpm/ARES-Commander-2026-26.3.1.4145-x86_64.rpm
 # rpm-ostree install /custom-rpm/expressvpn-3.69.0.0-1.x86_64.rpm
 
-rpm-ostree install https://www.graebert.com/cad-software/download/ares-commander/linux/rpm/latest
+rpm-ostree install https://files.graebert.com/ares/26.3.1.4145/ARES-Commander-2026-26.3.1.4145-x86_64.rpm
 
 
 #### Example for enabling a System Unit File
