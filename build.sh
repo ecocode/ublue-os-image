@@ -140,7 +140,7 @@ rpm-ostree install -C autoconf automake gcc gcc-c++ libpng-devel make ninja-buil
 
 # sway and wayland
 rpm-ostree install -C slurp wdisplays wl-clipboard wofi xdg-desktop-portal-wlr swaybg swayr swayidle swaylock sway-systemd waybar wf-recorder
-rpm-ostree install -C rofi-wayland bemenu walker
+rpm-ostree install -C rofi-wayland bemenu walker elephant
 rpm-ostree install -C ibus gnome-keyring
 # for compiling wlroots myself for mangowc - conflicting
 # rpm-ostree install egl-wayland libglvnd-egl libseat-devel wayland-protocols-devel wayland-devel mesa-libEGL-devel mesa-libGLES-devel mesa-dri-drivers xorg-x11-server-Xwayland libgbm-devel libxkbcommon-devel libudev-devel pixman-devel libinput-devel libevdev-devel systemd-devel cairo-devel libpcap-devel json-c-devel pam-devel pango-devel pcre-devel gdk-pixbuf2-devel hwdata-devel
