@@ -185,7 +185,7 @@ rpm-ostree install -C nmap sshfs
 
 # mkdir -p /usr/local/bin /usr/local/lib
 
-rpm-ostree install -C gimp3 dia flameshot 
+rpm-ostree install -C gimp3 blender dia flameshot
 
 # rpm-ostree install /custom-rpm/kyodialog-9.3-0.x86_64.rpm
 # rpm-ostree install /custom-rpm/insync-3.9.4.60020-fc40.x86_64.rpm
