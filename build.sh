@@ -150,7 +150,7 @@ rpm-ostree install -C ibus gnome-keyring
 rpm-ostree install -C borgbackup vorta
 
 # gtk libs
-rpm-ostree install -C gtk4-devel libadwaita-devel libadwaita
+rpm-ostree install -C gtk4-devel libadwaita-devel libadwaita webkit2gtk4.1
 # FC43 doesn't have webkit2gtk3 webkit2gtk4.0
 
 # taskwarrior
