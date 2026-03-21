@@ -187,7 +187,7 @@ rpm-ostree install -C nmap sshfs
 
 rpm-ostree install -C gimp3 blender dia flameshot
 # needed for creality print
-rpm-ostree install -C bzip2-libs
+rpm-ostree install -C bzip2 bzip2-libs
 
 # rpm-ostree install /custom-rpm/kyodialog-9.3-0.x86_64.rpm
 # rpm-ostree install /custom-rpm/insync-3.9.4.60020-fc40.x86_64.rpm
