@@ -147,7 +147,7 @@ rpm-ostree install -C ibus gnome-keyring
 # rpm-ostree install libdrm libdrm-devel libdisplay-info
 
 # system tools
-rpm-ostree install -C borgbackup vorta python3-llfuse fuse-devel libacl-devel
+rpm-ostree install -C borgbackup vorta python3-llfuse fuse-devel fuse-libs fuse libacl-devel
 
 # gtk libs
 rpm-ostree install -C gtk4-devel libadwaita-devel libadwaita webkit2gtk4.1
