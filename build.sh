@@ -82,6 +82,9 @@ curl --output-dir /usr/Downloads -O https://downloads.1password.com/linux/rpm/st
 # rm 1password-latest.rpm
 # rm 1password-cli-latest.rpm
 
+# needed for creality print
+rpm-ostree install -C bzip2 bzip2-libs
+
 # this installs a package from fedora repos
 rpm-ostree install -C atool akregator mailcap msmtp
 # aerc notmuch
@@ -186,8 +189,6 @@ rpm-ostree install -C nmap sshfs
 # mkdir -p /usr/local/bin /usr/local/lib
 
 rpm-ostree install -C gimp3 blender dia flameshot
-# needed for creality print
-rpm-ostree install -C bzip2 bzip2-libs
 
 # rpm-ostree install /custom-rpm/kyodialog-9.3-0.x86_64.rpm
 # rpm-ostree install /custom-rpm/insync-3.9.4.60020-fc40.x86_64.rpm
