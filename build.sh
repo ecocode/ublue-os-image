@@ -171,7 +171,7 @@ rpm-ostree install -C the_silver_searcher ripgrep
 # rpm-ostree install cuda-toolkit nvidia-gds
 
 # text pdf stuff
-rpm-ostree install -C odt2txt pandoc zathura zathura-pdf-poppler zathura-djvu zathura-ps a2ps ghostscript okular
+rpm-ostree install -C odt2txt pandoc texlive-scheme-full zathura zathura-pdf-poppler zathura-djvu zathura-ps a2ps ghostscript okular
 
 # fonts
 rpm-ostree install -C iosevka-nerd-fonts fira-code-nerd-fonts roboto-mono-nerd-fonts droid-sans-mono-nerd-fonts deja-vu-sans-mono-nerd-fonts monofur-nerd-fonts jet-brains-mono-nerd-fonts rsms-inter-fonts
