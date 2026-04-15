@@ -37,7 +37,7 @@ dnf5 -y copr enable avengemedia/dms-git
 # dnf5 -y copr enable avengemedia/dms
 # dnf5 -y copr enable avengemedia/danklinux
 dnf5 -y copr enable errornointernet/quickshell
-dnf5 -y copr enable dennemann/MangoWC
+# dnf5 -y copr enable dennemann/MangoWC
 # dnf5 -y copr enable @ai-ml/nvidia-container-toolkit
 dnf5 -y copr enable errornointernet/walker
 
