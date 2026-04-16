@@ -163,7 +163,7 @@ rpm-ostree install -C gtk4-devel libadwaita-devel libadwaita webkit2gtk4.1
 
 # development tools
 rpm-ostree install -C tmux zellij lazygit git zoxide
-rpm-ostree install -C kitty kitty-terminfo wezterm starship
+rpm-ostree install -C kitty kitty-terminfo wezterm ghostty starship
 # rpm-ostree install tilix ghostty ghostty-fish-completion ghostty-terminfo
 rpm-ostree install -C fish nushell direnv
 # rpm-ostree install -C neovim kakoune tree-sitter-cli global
