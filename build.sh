@@ -123,6 +123,9 @@ rpm-ostree install -C qt6-qtwayland
 # - sddm-wayland-generic
 rpm-ostree install -C scroll xwayland-satellite kvantum materia-kde-kvantum klassy
 rpm-ostree install -C niri mangowm xdg-desktop-portal-gtk dms brightnessctl cava cliphist matugen
+# for compiling somewm, see repository
+rpm-ostree install -C luajit lua-lgi cairo-devel pango-devel gdk-pixbuf2-devel wayland-protocols-devel libinput-devel libxkbcommon-devel
+
 # removed cosmic-desktop
 # stuff for wallpapers
 rpm-ostree install -C kde-wallpapers plasma-workspace-wallpapers arc-kde-wallpapers materia-kde-wallpapers plasma-wallpapers-dynamic constantine-backgrounds-kde
