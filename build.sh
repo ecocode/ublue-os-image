@@ -124,7 +124,7 @@ rpm-ostree install -C qt6-qtwayland
 rpm-ostree install -C scroll xwayland-satellite kvantum materia-kde-kvantum klassy
 rpm-ostree install -C niri mangowm xdg-desktop-portal-gtk dms brightnessctl cava cliphist matugen
 # for compiling somewm, see repository
-rpm-ostree install -C luajit lua-lgi cairo-devel pango-devel gdk-pixbuf2-devel wayland-protocols-devel libinput-devel libxkbcommon-devel libdrm-devel xorg-x11-server-Xwayland libxcb-devel xcb-util-devel xcb-util-wm-devel dbus-devel wlroots0.19-devel libasan libubsan
+rpm-ostree install -C lua-devel luajit lua-lgi cairo-devel pango-devel gdk-pixbuf2-devel wayland-protocols-devel libinput-devel libxkbcommon-devel libdrm-devel xorg-x11-server-Xwayland libxcb-devel xcb-util-devel xcb-util-wm-devel dbus-devel wlroots0.19-devel libasan libubsan
 
 # removed cosmic-desktop
 # stuff for wallpapers
