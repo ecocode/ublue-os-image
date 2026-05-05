@@ -41,7 +41,7 @@ dnf5 -y copr enable errornointernet/quickshell
 # dnf5 -y copr enable @ai-ml/nvidia-container-toolkit
 dnf5 -y copr enable errornointernet/walker
 # for uwsm
-dnf5 -y copr enable eli-xciv/hyprland
+dnf5 -y copr enable blacktau/hyprland
 
 curl -fsSL https://fedorapeople.org/groups/virt/virtio-win/virtio-win.repo | tee /etc/yum.repos.d/virtio-win.repo
 
