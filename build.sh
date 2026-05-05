@@ -40,6 +40,8 @@ dnf5 -y copr enable errornointernet/quickshell
 # dnf5 -y copr enable dennemann/MangoWC
 # dnf5 -y copr enable @ai-ml/nvidia-container-toolkit
 dnf5 -y copr enable errornointernet/walker
+# for uwsm
+dnf5 -y copr enable eli-xciv/hyprland
 
 curl -fsSL https://fedorapeople.org/groups/virt/virtio-win/virtio-win.repo | tee /etc/yum.repos.d/virtio-win.repo
 
@@ -133,7 +135,7 @@ rpm-ostree install -C kde-wallpapers plasma-workspace-wallpapers arc-kde-wallpap
 # removed: hyprland hyprland-devel cmake meson cpio
 rpm-ostree install -C strace
 # - sway
-rpm-ostree install -C systemd trash-cli gdu duc usbip fwupd udisks2 udiskie wev wpaperd virt-install virt-manager virt-top virt-viewer virtio-win edk2-ovmf swtpm swtpm-tools cockpit cockpit-machines cockpit-ostree cockpit-podman podman-compose w3m samba ddclient
+rpm-ostree install -C systemd uwsm trash-cli gdu duc usbip fwupd udisks2 udiskie wev wpaperd virt-install virt-manager virt-top virt-viewer virtio-win edk2-ovmf swtpm swtpm-tools cockpit cockpit-machines cockpit-ostree cockpit-podman podman-compose w3m samba ddclient
 # - wayfire
 rpm-ostree install -C tlp powertop acpi
 # rpm-ostree install power-profiles-daemon
