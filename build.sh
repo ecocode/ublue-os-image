@@ -13,7 +13,7 @@ RELEASE="$(rpm -E %fedora)"
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # enable copr repos
-# dnf5 -y copr enable alternateved/bleeding-emacs
+dnf5 -y copr enable alternateved/bleeding-emacs
 dnf5 -y copr enable dejan/lazygit
 dnf5 -y copr enable atim/nushell
 dnf5 -y copr enable atim/starship
@@ -141,8 +141,8 @@ rpm-ostree install -C tlp powertop acpi
 # rpm-ostree install power-profiles-daemon
 # - xorg-x11-drv-nvidia-cuda
 # These are needed for pdftools inside emacs
-# rpm install emacs
 rpm-ostree install -C autoconf automake gcc gcc-c++ libpng-devel make ninja-build poppler-devel poppler-glib-devel pkgconf patch
+rpm-ostree install -C emacs
 
 ########################################################################################################
 # NEW SORT BY PURPOSE
