@@ -135,7 +135,7 @@ rpm-ostree install -C kde-wallpapers plasma-workspace-wallpapers arc-kde-wallpap
 # rpm-ostree install xdg-desktop-portal-hyprland hyprland-plugins hyprpaper hypridle hyprlock hyprsysteminfo hyprshot hyprnome hyprdim hyprpicker
 # removed: hyprland hyprland-devel cmake meson cpio
 # Hyprland
-rpm-ostree install -C hyprland hyprland-guiutils hypridle hyprlauncher
+rpm-ostree install -C hyprland hyprland-guiutils hypridle hyprlock hyprlauncher
 rpm-ostree install -C strace
 # - sway
 rpm-ostree install -C systemd uwsm trash-cli gdu duc usbip fwupd udisks2 udiskie wev wpaperd virt-install virt-manager virt-top virt-viewer virtio-win edk2-ovmf swtpm swtpm-tools cockpit cockpit-machines cockpit-ostree cockpit-podman podman-compose w3m samba ddclient
