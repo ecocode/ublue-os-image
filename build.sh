@@ -50,10 +50,10 @@ curl -fsSL https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo | tee
 # dnf config-manager --add-repo https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
 
 echo "priority=1" | tee -a /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:yalter:niri-git.repo
-echo "priority=1" | tee -a /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:lionheartp:Hyprland.repo
+echo "priority=3" | tee -a /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:lionheartp:Hyprland.repo
 echo "priority=2" | tee -a /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:errornointernet:quickshell.repo
 echo "priority=2" | tee -a /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:errornointernet:walker.repo
-echo "priority=3" | tee -a /etc/yum.repos.d/terra.repo
+echo "priority=4" | tee -a /etc/yum.repos.d/terra.repo
 
 # this should remove all cache
 rpm-ostree cleanup -m
