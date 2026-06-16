@@ -137,8 +137,8 @@ rpm-ostree install -C kde-wallpapers plasma-workspace-wallpapers arc-kde-wallpap
 # removed: hyprland hyprland-devel cmake meson cpio
 # Hyprland
 rpm-ostree install -C hyprland
-rpm-ostree install -C hyprland-guiutils hypridle hyprlock hyprlauncher hyprpolkitagent
-# hyprland-qt-support hyprsunset hyprshutdown xdg-desktop-portal-hyprland hyprland-plugins hyprpolkitagent hyprcursor hyprpicker gpu-screen-recorder
+rpm-ostree install -C hyprland-guiutils hypridle hyprlock hyprlauncher hyprpolkitagent hyprcursor hyprpicker xdg-desktop-portal-hyprland hyprland-qt-support hyprpolkitagent
+# hyprsunset hyprshutdown hyprland-plugins gpu-screen-recorder
 
 rpm-ostree install -C strace
 # - sway
