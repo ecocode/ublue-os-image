@@ -194,7 +194,7 @@ rpm-ostree install -C odt2txt pandoc zathura zathura-pdf-poppler zathura-djvu za
 rpm-ostree install -C iosevka-nerd-fonts fira-code-nerd-fonts roboto-mono-nerd-fonts droid-sans-mono-nerd-fonts deja-vu-sans-mono-nerd-fonts monofur-nerd-fonts jet-brains-mono-nerd-fonts rsms-inter-fonts
 
 # network tools
-rpm-ostree install -C nmap sshfs
+rpm-ostree install -C nmap sshfs wireshark
 # netscanner not in fedora43
 
 # flatpak install flathub com.brave.Browser
