@@ -158,7 +158,7 @@ rpm-ostree install -C emacs global
 ########################################################################################################
 
 # sway and wayland
-rpm-ostree install -C slurp wdisplays wl-clipboard wofi xdg-desktop-portal-wlr swaybg swayr swayidle swaylock sway-systemd waybar wf-recorder
+rpm-ostree install -C slurp wdisplays wl-clipboard wofi xdg-desktop-portal-wlr swaybg swayr swayidle swaylock sway-systemd wf-recorder
 rpm-ostree install -C rofi-wayland bemenu walker elephant
 rpm-ostree install -C ibus gnome-keyring
 
