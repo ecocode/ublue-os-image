@@ -56,7 +56,7 @@ echo "priority=2" | tee -a /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:erro
 echo "priority=4" | tee -a /etc/yum.repos.d/terra.repo
 
 # this should remove all cache
-rpm-ostree cleanup -m
+# rpm-ostree cleanup -m
 
 rpm-ostree install -C terra-release
 
