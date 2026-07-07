@@ -60,10 +60,10 @@ echo "priority=4" | tee -a /etc/yum.repos.d/terra.repo
 
 dnf5 -y install terra-release
 
-dnf5 remove mako nano nano-default-editor || true
-dnf5 remove xwaylandvideobridge || true
-dnf5 remove steam steam-devices steamdeck-kde-presets-desktop || true
-dnf5 remove tuned tuned-ppd || true
+dnf5 -y remove mako nano nano-default-editor || true
+dnf5 -y remove xwaylandvideobridge || true
+dnf5 -y remove steam steam-devices steamdeck-kde-presets-desktop || true
+dnf5 -y remove tuned tuned-ppd || true
 dnf5 remove pasystray blueman || true
 
 dnf5 remove firefox firefox-langpacks || true
