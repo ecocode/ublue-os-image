@@ -58,21 +58,21 @@ echo "priority=4" | tee -a /etc/yum.repos.d/terra.repo
 # this should remove all cache
 # rpm-ostree cleanup -m
 
-rpm-ostree install -C terra-release
+dnf5 -y install -C terra-release
 
-rpm-ostree uninstall --idempotent mako nano nano-default-editor || true
-rpm-ostree uninstall --idempotent xwaylandvideobridge || true
-rpm-ostree uninstall --idempotent steam steam-devices steamdeck-kde-presets-desktop || true
-rpm-ostree uninstall --idempotent tuned tuned-ppd || true
-rpm-ostree uninstall --idempotent pasystray blueman || true
+dnf5 remove mako nano nano-default-editor || true
+dnf5 remove xwaylandvideobridge || true
+dnf5 remove steam steam-devices steamdeck-kde-presets-desktop || true
+dnf5 remove tuned tuned-ppd || true
+dnf5 remove pasystray blueman || true
 
-rpm-ostree uninstall --idempotent firefox firefox-langpacks || true
+dnf5 remove firefox firefox-langpacks || true
 
 # dnf config-manager --add-repo https://developer.download.nvidia.com/compute/cuda/repos/fedora41/x86_64/cuda-fedora41.repo
 # curl -fsSL https://developer.download.nvidia.com/compute/cuda/repos/fedora41/x86_64/cuda-fedora41.repo | tee /etc/yum.repos.d/cuda.repo
 
-rpm-ostree install -C mesa-vulkan-drivers vulkan-tools
-rpm-ostree install -C nvidia-container-toolkit
+dnf5 -y install -C mesa-vulkan-drivers vulkan-tools
+dnf5 -y install -C nvidia-container-toolkit
 # nvidia-container-toolkit-selinux
 
 # download and install 1password
@@ -89,113 +89,113 @@ curl --output-dir /usr/Downloads -O https://downloads.1password.com/linux/rpm/st
 # rm 1password-cli-latest.rpm
 
 # needed for creality print
-rpm-ostree install -C bzip2 bzip2-libs
+dnf5 -y install -C bzip2 bzip2-libs
 
 # this installs a package from fedora repos
-rpm-ostree install -C atool akregator mailcap msmtp
+dnf5 -y install -C atool akregator mailcap msmtp
 # aerc notmuch
 # - appimagelauncher
-rpm-ostree install -C bat
+dnf5 -y install -C bat
 # - bettercap
 # - blueman
-rpm-ostree install -C cryfs digikam toolbox distrobox dconf-editor dolphin entr thunar thunar-archive-plugin insync
+dnf5 -y install -C cryfs digikam toolbox distrobox dconf-editor dolphin entr thunar thunar-archive-plugin insync
 # epiphany is the package name of gnome web
 # - epiphany
-rpm-ostree install -C eza fastfetch fbreader fd-find firewall-config fzf gh glances glibc-locale-source gocryptfs grim gparted gvfs-gphoto2 gvfs-afc hotspot imv
+dnf5 -y install -C eza fastfetch fbreader fd-find firewall-config fzf gh glances glibc-locale-source gocryptfs grim gparted gvfs-gphoto2 gvfs-afc hotspot imv
 # - gtk3 gnome-tweaks # removed to test if this removes the gtk portal
 # - insync
 # - intel-media-driver
-rpm-ostree install -C j4-dmenu-desktop jrnl kalendar kamera kf5-solid kf6-solid kio-gdrive kio-extras-kf5 kio-fuse kio-ftps kjournald kontact ksystemlog kwallet-pam kanshi libimobiledevice libimobiledevice-utils libusb light lm_sensors lshw luarocks lynx macchanger mediainfo mpv neochat fractal dino catimg NetworkManager-tui
+dnf5 -y install -C j4-dmenu-desktop jrnl kalendar kamera kf5-solid kf6-solid kio-gdrive kio-extras-kf5 kio-fuse kio-ftps kjournald kontact ksystemlog kwallet-pam kanshi libimobiledevice libimobiledevice-utils libusb light lm_sensors lshw luarocks lynx macchanger mediainfo mpv neochat fractal dino catimg NetworkManager-tui
 
-# rpm-ostree install mako network-manager-applet foot foot-terminfo variety
-rpm-ostree install -C inxi nvtop drm_info
-# rpm-ostree install youtube-dl
+# dnf5 -y install mako network-manager-applet foot foot-terminfo variety
+dnf5 -y install -C inxi nvtop drm_info
+# dnf5 -y install youtube-dl
 # - niri
 # - nnn
 # - nvidia-vaapi-driver
 # - miracle-wm river
-rpm-ostree install -C openssl-devel perf perl-File-MimeInfo plasma-wayland-protocols
+dnf5 -y install -C openssl-devel perf perl-File-MimeInfo plasma-wayland-protocols
 # - pasystray
 
 # removed by EC 2025.01.11 to test on sway auna usb player : pulseaudio-utils
 # - qutebrowser
 # - qt5-qtwebengine-freeworld
-rpm-ostree install -C qt6-qtwayland
+dnf5 -y install -C qt6-qtwayland
 # - qtile
 # - sddm
 # - sddm-wayland-sway
 # - sddm-wayland-generic
-rpm-ostree install -C scroll xwayland-satellite klassy
+dnf5 -y install -C scroll xwayland-satellite klassy
 # kvantum materia-kde-kvantum
-rpm-ostree install -C niri mangowm xdg-desktop-portal-gtk dms brightnessctl cava cliphist matugen
+dnf5 -y install -C niri mangowm xdg-desktop-portal-gtk dms brightnessctl cava cliphist matugen
 # for compiling somewm and pinnacle, see repository
-rpm-ostree install -C meson luajit luajit-devel lua-lgi cairo-devel pango-devel gdk-pixbuf2-devel wayland-devel wayland-protocols-devel libinput-devel libxkbcommon-devel libdrm-devel xorg-x11-server-Xwayland xorg-x11-server-Xwayland-devel libxcb-devel xcb-util-devel xcb-util-wm-devel xcb-util-renderutil-devel dbus-devel glib2-devel libasan libubsan protobuf-compiler
+dnf5 -y install -C meson luajit luajit-devel lua-lgi cairo-devel pango-devel gdk-pixbuf2-devel wayland-devel wayland-protocols-devel libinput-devel libxkbcommon-devel libdrm-devel xorg-x11-server-Xwayland xorg-x11-server-Xwayland-devel libxcb-devel xcb-util-devel xcb-util-wm-devel xcb-util-renderutil-devel dbus-devel glib2-devel libasan libubsan protobuf-compiler
 # wlroots0.19-devel
 
 # removed cosmic-desktop
 # stuff for wallpapers
-rpm-ostree install -C kde-wallpapers plasma-workspace-wallpapers arc-kde-wallpapers materia-kde-wallpapers plasma-wallpapers-dynamic constantine-backgrounds-kde krfb akonadiconsole
-# rpm-ostree install xdg-desktop-portal-hyprland hyprland-plugins hyprpaper hypridle hyprlock hyprsysteminfo hyprshot hyprnome hyprdim hyprpicker
+dnf5 -y install -C kde-wallpapers plasma-workspace-wallpapers arc-kde-wallpapers materia-kde-wallpapers plasma-wallpapers-dynamic constantine-backgrounds-kde krfb akonadiconsole
+# dnf5 -y install xdg-desktop-portal-hyprland hyprland-plugins hyprpaper hypridle hyprlock hyprsysteminfo hyprshot hyprnome hyprdim hyprpicker
 # removed: hyprland hyprland-devel cmake meson cpio
 # Hyprland
-rpm-ostree install -C hyprland
-rpm-ostree install -C hyprland-guiutils hypridle hyprlock hyprlauncher hyprpolkitagent hyprcursor hyprpicker xdg-desktop-portal-hyprland hyprland-qt-support hyprpolkitagent
+dnf5 -y install -C hyprland
+dnf5 -y install -C hyprland-guiutils hypridle hyprlock hyprlauncher hyprpolkitagent hyprcursor hyprpicker xdg-desktop-portal-hyprland hyprland-qt-support hyprpolkitagent
 # hyprsunset hyprshutdown hyprland-plugins gpu-screen-recorder
 
-rpm-ostree install -C strace
+dnf5 -y install -C strace
 # - sway
-rpm-ostree install -C systemd uwsm trash-cli gdu duc usbip fwupd udisks2 udiskie wev wpaperd virt-install virt-manager virt-top virt-viewer virtio-win edk2-ovmf swtpm swtpm-tools cockpit cockpit-machines cockpit-ostree cockpit-podman podman-compose w3m samba ddclient
+dnf5 -y install -C systemd uwsm trash-cli gdu duc usbip fwupd udisks2 udiskie wev wpaperd virt-install virt-manager virt-top virt-viewer virtio-win edk2-ovmf swtpm swtpm-tools cockpit cockpit-machines cockpit-ostree cockpit-podman podman-compose w3m samba ddclient
 # - wayfire
-rpm-ostree install -C tlp powertop acpi
+dnf5 -y install -C tlp powertop acpi
 # rpm-ostree install power-profiles-daemon
 # - xorg-x11-drv-nvidia-cuda
 # These are needed for pdftools inside emacs
-rpm-ostree install -C autoconf automake gcc gcc-c++ libpng-devel pipewire-devel make ninja-build libvterm poppler poppler-devel poppler-glib-devel pdf-tools pkgconf patch
-rpm-ostree install -C emacs global
+dnf5 -y install -C autoconf automake gcc gcc-c++ libpng-devel pipewire-devel make ninja-build libvterm poppler poppler-devel poppler-glib-devel pdf-tools pkgconf patch
+dnf5 -y install -C emacs global
 
 ########################################################################################################
 # NEW SORT BY PURPOSE
 ########################################################################################################
 
 # sway and wayland
-rpm-ostree install -C slurp wdisplays wl-clipboard wofi xdg-desktop-portal-wlr swaybg swayr swayidle swaylock sway-systemd wf-recorder
-rpm-ostree install -C rofi-wayland bemenu walker elephant
-rpm-ostree install -C ibus gnome-keyring
+dnf5 -y install -C slurp wdisplays wl-clipboard wofi xdg-desktop-portal-wlr swaybg swayr swayidle swaylock sway-systemd wf-recorder
+dnf5 -y install -C rofi-wayland bemenu walker elephant
+dnf5 -y install -C ibus gnome-keyring
 
 # for ewm
-rpm-ostree install -C systemd-devel
+dnf5 -y install -C systemd-devel
 
 # for compiling wlroots myself for mangowc - conflicting
 # rpm-ostree install egl-wayland libglvnd-egl libseat-devel wayland-protocols-devel wayland-devel mesa-libEGL-devel mesa-libGLES-devel mesa-dri-drivers xorg-x11-server-Xwayland libgbm-devel libxkbcommon-devel libudev-devel pixman-devel libinput-devel libevdev-devel systemd-devel cairo-devel libpcap-devel json-c-devel pam-devel pango-devel pcre-devel gdk-pixbuf2-devel hwdata-devel
 # rpm-ostree install libdrm libdrm-devel libdisplay-info
 
 # system tools
-rpm-ostree install -C borgbackup vorta python3-llfuse fuse3-devel fuse3-libs fuse3 libacl-devel
+dnf5 -y install -C borgbackup vorta python3-llfuse fuse3-devel fuse3-libs fuse3 libacl-devel
 
 # gtk libs
-rpm-ostree install -C gtk4-devel libadwaita-devel libadwaita webkit2gtk4.1
+dnf5 -y install -C gtk4-devel libadwaita-devel libadwaita webkit2gtk4.1
 # FC43 doesn't have webkit2gtk3 webkit2gtk4.0
 
 # taskwarrior
 # rpm-ostree install taskopen
 
 # development tools
-rpm-ostree install -C tmux zellij lazygit git zoxide
-rpm-ostree install -C kitty kitty-terminfo wezterm ghostty starship
+dnf5 -y install -C tmux zellij lazygit git zoxide
+dnf5 -y install -C kitty kitty-terminfo wezterm ghostty starship
 # rpm-ostree install tilix ghostty ghostty-fish-completion ghostty-terminfo
-rpm-ostree install -C fish nushell direnv
+dnf5 -y install -C fish nushell direnv
 # rpm-ostree install -C neovim kakoune tree-sitter-cli global
-rpm-ostree install -C the_silver_searcher ripgrep
+dnf5 -y install -C the_silver_searcher ripgrep
 # rpm-ostree install cuda-toolkit nvidia-gds
 
 # text pdf stuff
-rpm-ostree install -C odt2txt pandoc zathura zathura-pdf-poppler zathura-djvu zathura-ps a2ps ghostscript okular
+dnf5 -y install -C odt2txt pandoc zathura zathura-pdf-poppler zathura-djvu zathura-ps a2ps ghostscript okular
 
 # fonts
-rpm-ostree install -C iosevka-nerd-fonts fira-code-nerd-fonts roboto-mono-nerd-fonts droid-sans-mono-nerd-fonts deja-vu-sans-mono-nerd-fonts monofur-nerd-fonts jet-brains-mono-nerd-fonts rsms-inter-fonts
+dnf5 -y install -C iosevka-nerd-fonts fira-code-nerd-fonts roboto-mono-nerd-fonts droid-sans-mono-nerd-fonts deja-vu-sans-mono-nerd-fonts monofur-nerd-fonts jet-brains-mono-nerd-fonts rsms-inter-fonts
 
 # network tools
-rpm-ostree install -C nmap sshfs wireshark
+dnf5 -y install -C nmap sshfs wireshark
 # netscanner not in fedora43
 
 # flatpak install flathub com.brave.Browser
@@ -208,7 +208,7 @@ rpm-ostree install -C nmap sshfs wireshark
 
 # mkdir -p /usr/local/bin /usr/local/lib
 
-rpm-ostree install -C gimp3 blender dia flameshot
+dnf5 -y install -C gimp3 blender dia flameshot
 
 # rpm-ostree install /custom-rpm/kyodialog-9.3-0.x86_64.rpm
 # rpm-ostree install /custom-rpm/insync-3.9.4.60020-fc40.x86_64.rpm
