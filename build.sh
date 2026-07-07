@@ -92,7 +92,7 @@ curl --output-dir /usr/Downloads -O https://downloads.1password.com/linux/rpm/st
 dnf5 -y install -C bzip2 bzip2-libs
 
 # this installs a package from fedora repos
-dnf5 -y install -C atool akregator mailcap msmtp
+dnf5 -y install atool akregator mailcap msmtp
 # aerc notmuch
 # - appimagelauncher
 dnf5 -y install -C bat
