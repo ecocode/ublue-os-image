@@ -64,8 +64,7 @@ FROM ghcr.io/ublue-os/aurora-nvidia-open:latest
 ## make modifications desired in your image and install packages by modifying the build.sh script
 ## the following RUN directive does all the things required to run "build.sh" as recommended.
 
-RUN mkdir /ctx
-COPY build.sh /ctx/build.sh
+COPY build.sh /build.sh
 
 ## 2026.01.29 - added to install insync in the image
 RUN rpm --import https://d2t3ff60b2tol4.cloudfront.net/repomd.xml.key
