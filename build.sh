@@ -58,7 +58,7 @@ echo "priority=4" | tee -a /etc/yum.repos.d/terra.repo
 # this should remove all cache
 # rpm-ostree cleanup -m
 
-dnf5 -y install -C terra-release
+dnf5 -y install terra-release
 
 dnf5 remove mako nano nano-default-editor || true
 dnf5 remove xwaylandvideobridge || true
