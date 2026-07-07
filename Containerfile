@@ -1,6 +1,6 @@
 FROM scratch as ctx
-COPY build_files /
-COPY system_files /system_files
+# COPY build_files /
+# COPY system_files /system_files
 
 ## 1. BUILD ARGS
 # These allow changing the produced image by passing different build args to adjust
