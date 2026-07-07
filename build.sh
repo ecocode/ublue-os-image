@@ -60,13 +60,13 @@ echo "priority=4" | tee -a /etc/yum.repos.d/terra.repo
 
 dnf5 -y install terra-release
 
-dnf5 -y remove mako nano nano-default-editor || true
-dnf5 -y remove xwaylandvideobridge || true
-dnf5 -y remove steam steam-devices steamdeck-kde-presets-desktop || true
-dnf5 -y remove tuned tuned-ppd || true
-dnf5 remove pasystray blueman || true
+dnf5 -y remove mako nano nano-default-editor
+dnf5 -y remove xwaylandvideobridge
+dnf5 -y remove steam steam-devices steamdeck-kde-presets-desktop
+dnf5 -y remove tuned tuned-ppd
+dnf5 -y remove pasystray blueman
 
-dnf5 remove firefox firefox-langpacks || true
+dnf5 -y remove firefox firefox-langpacks
 
 # dnf config-manager --add-repo https://developer.download.nvidia.com/compute/cuda/repos/fedora41/x86_64/cuda-fedora41.repo
 # curl -fsSL https://developer.download.nvidia.com/compute/cuda/repos/fedora41/x86_64/cuda-fedora41.repo | tee /etc/yum.repos.d/cuda.repo
