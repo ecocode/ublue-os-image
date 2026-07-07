@@ -83,8 +83,10 @@ COPY etc/yum.repos.d/1password.repo /etc/yum.repos.d/1password.repo
 
 
 RUN mkdir -p /var/lib/alternatives && \
-    /tmp/build.sh && \
-    ostree container commit
+    /tmp/build.sh
+
+RUN bootc container lint
+
 ## NOTES:
 # - /var/lib/alternatives is required to prevent failure with some RPM installs
 # - All RUN commands must end with ostree container commit
