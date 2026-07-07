@@ -2,6 +2,8 @@ FROM scratch as ctx
 # COPY build_files /
 # COPY system_files /system_files
 
+COPY build.sh /build.sh
+
 ## 1. BUILD ARGS
 # These allow changing the produced image by passing different build args to adjust
 # the source from which your image is built.
@@ -64,7 +66,6 @@ FROM ghcr.io/ublue-os/aurora-nvidia-open:latest
 ## make modifications desired in your image and install packages by modifying the build.sh script
 ## the following RUN directive does all the things required to run "build.sh" as recommended.
 
-COPY build.sh /tmp/build.sh
 
 ## 2026.01.29 - added to install insync in the image
 RUN rpm --import https://d2t3ff60b2tol4.cloudfront.net/repomd.xml.key
@@ -93,7 +94,7 @@ RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
     --mount=type=cache,dst=/var/cache \
     --mount=type=cache,dst=/var/log \
     --mount=type=tmpfs,dst=/tmp \
-    /tmp/build.sh
+    /ctx/build.sh
 
 RUN bootc container lint
 
