@@ -138,8 +138,8 @@ dnf5 -y install kde-wallpapers plasma-workspace-wallpapers arc-kde-wallpapers ma
 # dnf5 -y install xdg-desktop-portal-hyprland hyprland-plugins hyprpaper hypridle hyprlock hyprsysteminfo hyprshot hyprnome hyprdim hyprpicker
 # removed: hyprland hyprland-devel cmake meson cpio
 # Hyprland
-dnf5 -y install hyprland
-dnf5 -y install hyprland-guiutils hypridle hyprlock hyprlauncher hyprpolkitagent hyprcursor hyprpicker xdg-desktop-portal-hyprland hyprland-qt-support hyprpolkitagent
+# dnf5 -y install hyprland
+# dnf5 -y install hyprland-guiutils hypridle hyprlock hyprlauncher hyprpolkitagent hyprcursor hyprpicker xdg-desktop-portal-hyprland hyprland-qt-support hyprpolkitagent
 # hyprsunset hyprshutdown hyprland-plugins gpu-screen-recorder
 
 dnf5 -y install strace
