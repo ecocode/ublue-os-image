@@ -65,6 +65,7 @@ dnf5 -y remove xwaylandvideobridge
 dnf5 -y remove steam steam-devices steamdeck-kde-presets-desktop
 dnf5 -y remove tuned tuned-ppd
 dnf5 -y remove pasystray blueman
+dnf5 -y remove kate
 
 dnf5 -y remove firefox firefox-langpacks
 
