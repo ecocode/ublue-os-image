@@ -65,7 +65,7 @@ dnf5 -y remove xwaylandvideobridge
 dnf5 -y remove steam steam-devices steamdeck-kde-presets-desktop
 dnf5 -y remove tuned tuned-ppd
 dnf5 -y remove pasystray blueman
-dnf5 -y remove kate
+dnf5 -y remove kate kate-krunner-plugin
 
 dnf5 -y remove firefox firefox-langpacks
 
@@ -193,7 +193,7 @@ dnf5 -y install the_silver_searcher ripgrep
 dnf5 -y install odt2txt pandoc zathura zathura-pdf-poppler zathura-djvu zathura-ps a2ps ghostscript okular
 
 # fonts
-dnf5 -y install iosevka-nerd-fonts fira-code-nerd-fonts roboto-mono-nerd-fonts droid-sans-mono-nerd-fonts deja-vu-sans-mono-nerd-fonts monofur-nerd-fonts jet-brains-mono-nerd-fonts rsms-inter-fonts
+dnf5 -y install iosevka-nerd-fonts fira-code-nerd-fonts roboto-mono-nerd-fonts droid-sans-mono-nerd-fonts deja-vu-sans-mono-nerd-fonts monofur-nerd-fonts jet-brains-mono-nerd-fonts rsms-inter-fonts inconsolata-nerd-fonts zed-mono-nerd-fonts source-code-pro-nerd-fonts pro-font-nerd-fonts bitstream-vera-sans-mono-nerd-fonts cascadia-mono-nerd-fonts adwaita-mono-nerd-fonts
 
 # network tools
 dnf5 -y install nmap sshfs wireshark
