@@ -145,7 +145,7 @@ dnf5 -y install kde-wallpapers plasma-workspace-wallpapers arc-kde-wallpapers ma
 
 dnf5 -y install strace
 # - sway
-dnf5 -y install systemd uwsm trash-cli gdu duc usbip fwupd udisks2 udiskie wev wpaperd virt-install virt-manager virt-top virt-viewer virtio-win edk2-ovmf swtpm swtpm-tools cockpit cockpit-machines cockpit-ostree cockpit-podman podman-compose w3m samba ddclient
+dnf5 -y install systemd uwsm trash-cli gdu duc usbip fwupd udisks2 udiskie wev wpaperd virt-install virt-manager virt-top virt-viewer virtio-win edk2-ovmf swtpm swtpm-tools podman-compose w3m samba ddclient
 # - wayfire
 dnf5 -y install tlp powertop acpi
 # rpm-ostree install power-profiles-daemon
@@ -209,7 +209,7 @@ dnf5 -y install nmap sshfs wireshark
 
 # mkdir -p /usr/local/bin /usr/local/lib
 
-dnf5 -y install gimp3 blender dia flameshot
+dnf5 -y install gimp3 blender dia flameshot annotator
 
 # rpm-ostree install /custom-rpm/kyodialog-9.3-0.x86_64.rpm
 # rpm-ostree install /custom-rpm/insync-3.9.4.60020-fc40.x86_64.rpm
