@@ -13,7 +13,7 @@ RELEASE="$(rpm -E %fedora)"
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # enable copr repos
-dnf5 -y copr enable alternateved/bleeding-emacs
+# dnf5 -y copr enable alternateved/bleeding-emacs
 dnf5 -y copr enable dejan/lazygit
 dnf5 -y copr enable atim/nushell
 dnf5 -y copr enable atim/starship
@@ -152,7 +152,7 @@ dnf5 -y install tlp powertop acpi
 # - xorg-x11-drv-nvidia-cuda
 # These are needed for pdftools inside emacs
 dnf5 -y install autoconf automake gcc gcc-c++ libpng-devel pipewire-devel make ninja-build libvterm poppler poppler-devel poppler-glib-devel pdf-tools pkgconf patch
-dnf5 -y install emacs global
+dnf5 -y install global
 
 ########################################################################################################
 # NEW SORT BY PURPOSE
