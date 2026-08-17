@@ -148,7 +148,7 @@ dnf5 -y install strace
 # - sway
 dnf5 -y install systemd uwsm trash-cli gdu duc usbip fwupd udisks2 udiskie wev wpaperd virt-install virt-manager virt-top virt-viewer virtio-win edk2-ovmf swtpm swtpm-tools podman-compose w3m samba ddclient
 # - wayfire
-dnf5 -y install tlp powertop acpi
+dnf5 -y install tlp powertop acpi nmon
 # rpm-ostree install power-profiles-daemon
 # - xorg-x11-drv-nvidia-cuda
 # These are needed for pdftools inside emacs
