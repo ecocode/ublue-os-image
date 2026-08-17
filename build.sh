@@ -22,7 +22,7 @@ dnf5 -y copr enable aquacash5/nerd-fonts
 dnf5 -y copr enable varlad/zellij
 dnf5 -y copr enable wezfurlong/wezterm-nightly
 dnf5 -y copr enable alebastr/swayr
-dnf5 -y copr enable alebastr/sway-git
+dnf5 -y copr enable alebastr/sway-extras
 dnf5 -y copr enable yalter/niri-git
 dnf5 -y copr enable mecattaf/duoRPM
 # yalter/niri is stable
