@@ -22,6 +22,7 @@ dnf5 -y copr enable aquacash5/nerd-fonts
 dnf5 -y copr enable varlad/zellij
 dnf5 -y copr enable wezfurlong/wezterm-nightly
 dnf5 -y copr enable alebastr/swayr
+dnf5 -y copr enable alebastr/sway-git
 dnf5 -y copr enable yalter/niri-git
 dnf5 -y copr enable mecattaf/duoRPM
 # yalter/niri is stable
@@ -159,7 +160,7 @@ dnf5 -y install global
 ########################################################################################################
 
 # sway and wayland
-dnf5 -y install slurp wdisplays wl-clipboard wofi xdg-desktop-portal-wlr swaybg swayr swayidle swaylock sway-systemd wf-recorder
+dnf5 -y install slurp wdisplays wl-clipboard wofi xdg-desktop-portal-wlr swaybg swayr swayidle swaylock sway-systemd wf-recorder sway-git
 dnf5 -y install rofi-wayland bemenu walker elephant
 dnf5 -y install ibus gnome-keyring
 
