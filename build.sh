@@ -197,7 +197,7 @@ dnf5 -y install odt2txt pandoc zathura zathura-pdf-poppler zathura-djvu zathura-
 dnf5 -y install iosevka-nerd-fonts fira-code-nerd-fonts roboto-mono-nerd-fonts droid-sans-mono-nerd-fonts deja-vu-sans-mono-nerd-fonts monofur-nerd-fonts jet-brains-mono-nerd-fonts rsms-inter-fonts inconsolata-nerd-fonts zed-mono-nerd-fonts source-code-pro-nerd-fonts pro-font-nerd-fonts bitstream-vera-sans-mono-nerd-fonts cascadia-mono-nerd-fonts adwaita-mono-nerd-fonts google-noto-sans-fonts
 
 # network tools
-dnf5 -y install nmap sshfs wireshark
+dnf5 -y install nmap sshfs wireshark nm-connection-editor
 # netscanner not in fedora43
 
 # flatpak install flathub com.brave.Browser
