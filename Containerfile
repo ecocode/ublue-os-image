@@ -58,8 +58,8 @@ COPY build.sh /build.sh
 ## this is a standard Containerfile FROM using the build ARGs above to select the right upstream image
 # FROM ghcr.io/ublue-os/${SOURCE_IMAGE}${SOURCE_SUFFIX}:${SOURCE_TAG}
 # FROM ghcr.io/ublue-os/kinoite-nvidia:latest
-# FROM ghcr.io/ublue-os/aurora-nvidia-open:latest
-FROM ghcr.io/ublue-os/aurora-dx-nvidia-open:latest
+FROM ghcr.io/ublue-os/aurora-nvidia-open:latest
+# FROM ghcr.io/ublue-os/aurora-dx-nvidia-open:latest
 # FROM ghcr.io/ublue-os/aurora-nvidia-open:stable-daily-20260306
 # FROM ghcr.io/wayblueorg/hyprland-nvidia:latest
 
