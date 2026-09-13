@@ -39,8 +39,8 @@ dnf5 -y copr enable avengemedia/dms-git
 dnf5 -y copr enable errornointernet/quickshell
 # dnf5 -y copr enable dennemann/MangoWC
 # dnf5 -y copr enable gregoryloscombe/mangowc
-# ackerman/nexus includes mangowm
-dnf5 -y copr enable ackerman/nexus
+# ackerman/nexus includes mangowm - mangowm is on terra too !
+# dnf5 -y copr enable ackerman/nexus
 # dnf5 -y copr enable @ai-ml/nvidia-container-toolkit
 dnf5 -y copr enable errornointernet/walker
 # for uwsm
@@ -55,11 +55,11 @@ curl -fsSL https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo | tee
 
 # lower is higher
 echo "priority=1" | tee -a /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:yalter:niri-git.repo
-echo "priority=3" | tee -a /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:lionheartp:Hyprland.repo
 echo "priority=2" | tee -a /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:errornointernet:quickshell.repo
 echo "priority=2" | tee -a /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:errornointernet:walker.repo
+echo "priority=3" | tee -a /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:lionheartp:Hyprland.repo
 echo "priority=4" | tee -a /etc/yum.repos.d/terra.repo
-echo "priority=10" | tee -a /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:ackerman:nexus.repo
+# echo "priority=10" | tee -a /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:ackerman:nexus.repo
 
 # this should remove all cache
 # rpm-ostree cleanup -m
