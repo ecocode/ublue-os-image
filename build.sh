@@ -190,7 +190,8 @@ dnf5 -y install gtk4-devel libadwaita-devel libadwaita webkit2gtk4.1
 
 # development tools
 dnf5 -y install tmux zellij lazygit git zoxide
-dnf5 -y install kitty kitty-terminfo wezterm ghostty starship
+dnf5 -y install kitty kitty-terminfo ghostty starship
+# wezterm
 # rpm-ostree install tilix ghostty ghostty-fish-completion ghostty-terminfo
 dnf5 -y install fish nushell direnv
 # rpm-ostree install neovim kakoune tree-sitter-cli global
