@@ -221,8 +221,8 @@ dnf5 -y install nmap sshfs wireshark nm-connection-editor
 dnf5 -y install gimp3 blender dia flameshot annotator
 
 # voor org to pdf
-dnf5 -y install texlive-pdftex texlive-koma-script texlive-base texlive-collection-fontsextra texlive-wrapfig texlive-ulem texlive-capt-of texlive-tabulary texlive-fancybox texlive-pdfpages texlive-tocloft texlive-parskip texlive-caption texlive-morefloats texlive-lastpage texlive-helvetic texlive-babel-french texlive-xcolor texlive-bookmark
-dnf5 -y install texlive-scheme-full
+# dnf5 -y install texlive-pdftex texlive-koma-script texlive-base texlive-collection-fontsextra texlive-wrapfig texlive-ulem texlive-capt-of texlive-tabulary texlive-fancybox texlive-pdfpages texlive-tocloft texlive-parskip texlive-caption texlive-morefloats texlive-lastpage texlive-helvetic texlive-babel-french texlive-xcolor texlive-bookmark
+# dnf5 -y install texlive-scheme-full
 
 # rpm-ostree install /custom-rpm/kyodialog-9.3-0.x86_64.rpm
 # rpm-ostree install /custom-rpm/insync-3.9.4.60020-fc40.x86_64.rpm
