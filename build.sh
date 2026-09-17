@@ -40,7 +40,7 @@ dnf5 -y copr enable errornointernet/quickshell
 # dnf5 -y copr enable dennemann/MangoWC
 # dnf5 -y copr enable gregoryloscombe/mangowc
 # ackerman/nexus includes mangowm - mangowm is on terra too !
-# dnf5 -y copr enable ackerman/nexus
+dnf5 -y copr enable ackerman/nexus
 # dnf5 -y copr enable @ai-ml/nvidia-container-toolkit
 dnf5 -y copr enable errornointernet/walker
 # for uwsm
