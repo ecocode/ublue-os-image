@@ -39,8 +39,8 @@ dnf5 -y copr enable avengemedia/dms-git
 dnf5 -y copr enable errornointernet/quickshell
 # dnf5 -y copr enable dennemann/MangoWC
 # dnf5 -y copr enable gregoryloscombe/mangowc
-# ackerman/nexus includes mangowm - mangowm is on terra too !
-# dnf5 -y copr enable ackerman/nexus
+# ackerman/nexus includes mangowm - mangowm is on terra too ! needed for umbriel though
+dnf5 -y copr enable ackerman/nexus
 # dnf5 -y copr enable @ai-ml/nvidia-container-toolkit
 dnf5 -y copr enable errornointernet/walker
 # for uwsm
@@ -59,7 +59,7 @@ echo "priority=2" | tee -a /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:erro
 echo "priority=2" | tee -a /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:errornointernet:walker.repo
 echo "priority=3" | tee -a /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:lionheartp:Hyprland.repo
 echo "priority=4" | tee -a /etc/yum.repos.d/terra.repo
-# echo "priority=10" | tee -a /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:ackerman:nexus.repo
+echo "priority=10" | tee -a /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:ackerman:nexus.repo
 
 # this should remove all cache
 # rpm-ostree cleanup -m
@@ -167,7 +167,7 @@ dnf5 -y install global
 ########################################################################################################
 
 # sway and wayland
-dnf5 -y install slurp wdisplays wl-clipboard wofi xdg-desktop-portal-wlr swaybg swayr swayidle swaylock sway-systemd wf-recorder sway-git mangowm
+dnf5 -y install slurp wdisplays wl-clipboard wofi xdg-desktop-portal-wlr swaybg swayr swayidle swaylock sway-systemd wf-recorder sway-git mangowm umbriel-git
 dnf5 -y install rofi-wayland bemenu walker elephant
 dnf5 -y install ibus gnome-keyring
 
