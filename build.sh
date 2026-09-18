@@ -59,7 +59,7 @@ echo "priority=2" | tee -a /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:erro
 echo "priority=2" | tee -a /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:errornointernet:walker.repo
 echo "priority=3" | tee -a /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:lionheartp:Hyprland.repo
 echo "priority=4" | tee -a /etc/yum.repos.d/terra.repo
-echo "priority=10" | tee -a /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:ackerman:nexus.repo
+# echo "priority=10" | tee -a /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:ackerman:nexus.repo
 
 # this should remove all cache
 # rpm-ostree cleanup -m
