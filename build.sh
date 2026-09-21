@@ -167,7 +167,7 @@ dnf5 -y install global
 ########################################################################################################
 
 # sway and wayland
-dnf5 -y install slurp wdisplays wl-clipboard wofi xdg-desktop-portal-wlr swaybg swayr swayidle swaylock sway-systemd wf-recorder sway-git mangowm umbriel-nightly xdg-desktop-portal-umbriel-nightly
+dnf5 -y install slurp wdisplays wlr-randr wl-clipboard wofi xdg-desktop-portal-wlr swaybg swayr swayidle swaylock sway-systemd wf-recorder sway-git mangowm umbriel-nightly xdg-desktop-portal-umbriel-nightly
 dnf5 -y install rofi-wayland bemenu walker elephant
 dnf5 -y install ibus gnome-keyring
 
