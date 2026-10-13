@@ -159,7 +159,7 @@ dnf5 -y install tlp powertop acpi nmon
 # rpm-ostree install power-profiles-daemon
 # - xorg-x11-drv-nvidia-cuda
 # These are needed for pdftools inside emacs
-dnf5 -y install autoconf automake gcc gcc-c++ libpng-devel pipewire-devel rust-pipewire-devel make ninja-build libvterm poppler poppler-devel poppler-glib-devel pdf-tools pkgconf patch
+dnf5 -y install autoconf automake gcc gcc-c++ libpng-devel pipewire-devel pipewire-libs rust-pipewire-devel make ninja-build libvterm poppler poppler-devel poppler-glib-devel pdf-tools pkgconf patch
 dnf5 -y install global
 
 ########################################################################################################
