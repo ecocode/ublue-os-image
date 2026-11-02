@@ -135,8 +135,8 @@ dnf5 -y install qt6-qtwayland
 dnf5 -y install scroll xwayland-satellite klassy
 # kvantum materia-kde-kvantum niri dms cava
 dnf5 -y install xdg-desktop-portal-gtk adw-gtk3-theme nwg-look
-dnf5 -y install noctalia brightnessctl
-dnf5 -y install cliphist matugen
+dnf5 -y install --setopt=install_weak_deps=False noctalia
+dnf5 -y install cliphist matugen brightnessctl
 # for compiling somewm and pinnacle, see repository
 dnf5 -y install meson luajit luajit-devel lua-lgi cairo-devel pango-devel gdk-pixbuf2-devel wayland-devel wayland-protocols-devel libinput-devel libxkbcommon-devel libdrm-devel xorg-x11-server-Xwayland xorg-x11-server-Xwayland-devel libxcb-devel xcb-util-devel xcb-util-wm-devel xcb-util-renderutil-devel dbus-devel glib2-devel libasan libubsan protobuf-compiler 
 # wlroots0.19-devel
