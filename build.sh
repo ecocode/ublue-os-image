@@ -127,7 +127,7 @@ dnf5 -y install openssl-devel perf perl-File-MimeInfo plasma-wayland-protocols
 # removed by EC 2025.01.11 to test on sway auna usb player : pulseaudio-utils
 # - qutebrowser
 # - qt5-qtwebengine-freeworld
-dnf5 -y install qt6-qtwayland gdm greetd tuigreet ly
+dnf5 -y install qt6-qtwayland
 # - qtile
 # - sddm
 # - sddm-wayland-sway
