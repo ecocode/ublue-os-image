@@ -133,8 +133,9 @@ dnf5 -y install qt6-qtwayland
 # - sddm-wayland-sway
 # - sddm-wayland-generic
 dnf5 -y install scroll xwayland-satellite klassy
-# kvantum materia-kde-kvantum
-dnf5 -y install niri xdg-desktop-portal-gtk dms noctalia brightnessctl cava cliphist matugen adw-gtk3-theme nwg-look
+# kvantum materia-kde-kvantum niri dms
+dnf5 -y install xdg-desktop-portal-gtk adw-gtk3-theme nwg-look
+dnf5 -y install noctalia brightnessctl cava cliphist matugen
 # for compiling somewm and pinnacle, see repository
 dnf5 -y install meson luajit luajit-devel lua-lgi cairo-devel pango-devel gdk-pixbuf2-devel wayland-devel wayland-protocols-devel libinput-devel libxkbcommon-devel libdrm-devel xorg-x11-server-Xwayland xorg-x11-server-Xwayland-devel libxcb-devel xcb-util-devel xcb-util-wm-devel xcb-util-renderutil-devel dbus-devel glib2-devel libasan libubsan protobuf-compiler 
 # wlroots0.19-devel
