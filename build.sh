@@ -14,39 +14,39 @@ RELEASE="$(rpm -E %fedora)"
 
 # enable copr repos
 # dnf5 -y copr enable alternateved/bleeding-emacs
-dnf5 -y copr enable dejan/lazygit
-dnf5 -y copr enable atim/nushell
-dnf5 -y copr enable atim/starship
-dnf5 -y copr enable nucleo/gocryptfs
-dnf5 -y copr enable aquacash5/nerd-fonts
-dnf5 -y copr enable varlad/zellij
-dnf5 -y copr enable wezfurlong/wezterm-nightly
-dnf5 -y copr enable alebastr/swayr
-dnf5 -y copr enable alebastr/sway-extras
-dnf5 -y copr enable yalter/niri-git
-dnf5 -y copr enable mecattaf/duoRPM
+dnf5 -y copr enable dejan/lazygit fedora-44-x86_64
+dnf5 -y copr enable atim/nushell fedora-44-x86_64
+dnf5 -y copr enable atim/starship fedora-44-x86_64
+dnf5 -y copr enable nucleo/gocryptfs fedora-44-x86_64
+dnf5 -y copr enable aquacash5/nerd-fonts fedora-44-x86_64
+dnf5 -y copr enable varlad/zellij fedora-44-x86_64
+dnf5 -y copr enable wezfurlong/wezterm-nightly fedora-44-x86_64
+dnf5 -y copr enable alebastr/swayr fedora-44-x86_64
+dnf5 -y copr enable alebastr/sway-extras fedora-44-x86_64
+dnf5 -y copr enable yalter/niri-git fedora-44-x86_64
+dnf5 -y copr enable mecattaf/duoRPM fedora-44-x86_64
 # yalter/niri is stable
-dnf5 -y copr enable ryanabx/cosmic-epoch
+dnf5 -y copr enable ryanabx/cosmic-epoch fedora-44-x86_64
 # dnf5 -y copr enable ecomaikgolf/typst
-dnf5 -y copr enable ulysg/xwayland-satellite
+dnf5 -y copr enable ulysg/xwayland-satellite fedora-44-x86_64
 # only for fedora42
 # dnf5 -y copr enable burhanverse/ghostty
 # dnf5 -y copr enable atim/kakoune
-dnf5 -y copr enable errornointernet/klassy
-dnf5 -y copr enable avengemedia/dms-git
+dnf5 -y copr enable errornointernet/klassy fedora-44-x86_64
+dnf5 -y copr enable avengemedia/dms-git fedora-44-x86_64
 # dnf5 -y copr enable avengemedia/dms
 # dnf5 -y copr enable avengemedia/danklinux
-dnf5 -y copr enable errornointernet/quickshell
+dnf5 -y copr enable errornointernet/quickshell fedora-44-x86_64
 # dnf5 -y copr enable dennemann/MangoWC
 # dnf5 -y copr enable gregoryloscombe/mangowc
 # ackerman/nexus includes mangowm - mangowm is on terra too !
 # dnf5 -y copr enable ackerman/nexus
 # dnf5 -y copr enable @ai-ml/nvidia-container-toolkit
-dnf5 -y copr enable errornointernet/walker
+dnf5 -y copr enable errornointernet/walker fedora-44-x86_64
 # for uwsm
 # dnf5 -y copr enable solopasha/hyprland
 # dnf5 -y copr enable blacktau/hyprland
-dnf5 -y copr enable lionheartp/Hyprland
+dnf5 -y copr enable lionheartp/Hyprland fedora-44-x86_64
 
 curl -fsSL https://fedorapeople.org/groups/virt/virtio-win/virtio-win.repo | tee /etc/yum.repos.d/virtio-win.repo
 
