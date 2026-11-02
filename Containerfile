@@ -62,8 +62,8 @@ COPY build.sh /build.sh
 # FROM ghcr.io/ublue-os/aurora-nvidia-open:stable-daily-20260306
 # FROM ghcr.io/wayblueorg/hyprland-nvidia:latest
 
-# FROM ghcr.io/ublue-os/aurora-nvidia-open:latest
-FROM ghcr.io/secureblue/sericea-nvidia-open-hardened:latest
+FROM ghcr.io/ublue-os/aurora-nvidia-open:latest
+# FROM ghcr.io/secureblue/sericea-nvidia-open-hardened:latest
 
 ### 3. MODIFICATIONS
 ## make modifications desired in your image and install packages by modifying the build.sh script
