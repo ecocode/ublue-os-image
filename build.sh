@@ -113,6 +113,7 @@ dnf5 -y install eza fastfetch fbreader fd-find firewall-config fzf gh glances gl
 # - insync
 # - intel-media-driver
 dnf5 -y install j4-dmenu-desktop jrnl kalendar kamera kf5-solid kf6-solid kio-gdrive kio-extras-kf5 kio-fuse kio-ftps kjournald kontact ksystemlog kwallet-pam kanshi libimobiledevice libimobiledevice-utils libusb light lm_sensors lshw luarocks lynx macchanger mediainfo mpv neochat fractal dino catimg NetworkManager-tui
+dnf5 -y install fuse
 
 # dnf5 -y install mako network-manager-applet foot foot-terminfo variety
 dnf5 -y install inxi nvtop drm_info
