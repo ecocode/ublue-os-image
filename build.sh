@@ -185,7 +185,7 @@ dnf5 -y install systemd-devel
 dnf5 -y install borgbackup vorta python3-llfuse fuse3-devel fuse3-libs fuse3 libacl-devel
 
 # gtk libs
-dnf5 -y install gtk4-devel libadwaita-devel libadwaita webkit2gtk4.1
+dnf5 -y install gtk4-devel libadwaita-devel libadwaita webkit2gtk4.1 webkit2gtk4.1-devel
 # FC43 doesn't have webkit2gtk3 webkit2gtk4.0
 
 # taskwarrior
